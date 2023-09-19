@@ -1,29 +1,48 @@
 import requests
-from tqdm import tqdm
+import pickle
 
 import sys
 sys.path.append('/Users/ankamenskiy/SmartDota')
 
 from src.data.dataclasses.match import MatchData
 from typing import Any, List
+from tqdm import tqdm
 
 
-class ProMatchesDataDownloader:
+class BaseDataloader:
+
+    def __init__(self) -> None:
+        self.data = []
+
+    def reset_dataloader(self) -> None:
+        self.data = [] 
+
+    def save(self, path: str):
+        pickle.dump(self.data, open(path, "wb"))
+
+    def load(self, path: str):
+        self.data = pickle.load(open(path, "rb"))
+
+
+class ProMatchesDataloader(BaseDataloader):
 
     API_HOST = "https://api.opendota.com/api"
     MAX_MATCH_INDEX = 9999999998
 
     def __init__(self) -> None:
         self.first_id = self.MAX_MATCH_INDEX
+        super().__init__()
 
     # TODO: add multithreading load
     def __call__(self, amount: int, *args: Any, **kwds: Any) -> List[MatchData]:
         pro_matches_data = self._load_data(amount)
         self._extend_data(pro_matches_data)
-        return self._convert_data(pro_matches_data)
+        self.data.extend(self._convert_data(pro_matches_data))
+        return self.data
 
-    def reset_load_index(self) -> None:
+    def reset_dataloader(self) -> None:
         self.first_id = self.MAX_MATCH_INDEX
+        self.data = []
 
     def _load_data(self, amount: int) -> list:
         pro_matches = []
