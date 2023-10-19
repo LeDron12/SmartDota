@@ -2,10 +2,11 @@ import requests
 import pickle
 
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota')
+sys.path.append('/Users/ledron12/SmartDota')
 
 from src.data.dataclasses.match import MatchData
 from typing import Any, List
+from collections import deque
 from tqdm import tqdm
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -64,26 +65,47 @@ class ProMatchesDataloader(BaseDataloader):
                 pro_matches.extend(mathes_batch)
 
                 pbar.update(len(mathes_batch))
+                time.sleep(10)
 
         return pro_matches[:amount]
 
 
     def _extend_data(self, matches_data: list) -> None:
 
-        def load_match_data(match_id: int) -> dict:
-            return requests.get(url=self.API_HOST + f'/matches/{match_id}').json()
+        def load_match_data(match_id: int, pos: int) -> dict:
+            try:
+                resp = requests.get(url=self.API_HOST + f'/matches/{match_id}').json()
+                return resp, match_id, pos
+            except:
+                return None, match_id, pos
         
         with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
-            futures = []
-            for match_data in matches_data:
-                futures.append(executor.submit(load_match_data, match_id=match_data['match_id']))
-            for i, future in tqdm(enumerate(as_completed(futures)), desc='Loading extra data from OpenDota'):
-                matches_data[i].update(future.result())
+            futures = deque()
+            for i, match_data in enumerate(matches_data):
+                futures.append(executor.submit(load_match_data, match_id=match_data['match_id'], pos=i))
+
+            total = len(matches_data)
+            with tqdm(total=total, desc='Loading extra data from OpenDota') as pbar: 
+                while len(futures) > 0:
+                    for future in tqdm(as_completed(futures), desc='Loading extra data from OpenDota'):
+                        futures.popleft()
+                        result, match_id, pos = future.result()
+
+                        if result is None or 'error' in result:
+                            futures.append(executor.submit(load_match_data, match_id=match_id, pos=pos))
+                        else:
+                            matches_data[pos].update(result)
+
+                    pbar.update(total - len(futures))
+                    time.sleep(45)
+
+        pickle.dump(matches_data, open(f'/Users/ledron12/SmartDota/cache/pro_matches_{len(matches_data)}_2_raw', "wb"))
 
     def _convert_data(self, matches_data: list) -> List[MatchData]:
 
         for match_data in tqdm(matches_data, desc='Filtering and converting data'):
-            picks_only = filter(lambda x: x['is_pick'], match_data['picks_bans'])
+            picks_bans = match_data['picks_bans'] if 'picks_bans' in match_data else None
+            picks_only = filter(lambda x: x['is_pick'], picks_bans) if picks_bans is not None else []
             match_data['picks'] = [{
                 'order': pick['order'],
                 'hero_id': pick['hero_id'], 
@@ -96,7 +118,7 @@ class ProMatchesDataloader(BaseDataloader):
                 radiant_team_id=match['radiant_team_id'],
                 dire_team_id=match['dire_team_id'],
                 picks=match['picks'],
-                patch_id=match['patch']
+                patch_id=match['patch'] if 'patch' in match else -1
             )
         for match in matches_data]
 
