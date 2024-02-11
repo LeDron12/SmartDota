@@ -1,5 +1,6 @@
 import requests
 import pickle
+import json
 
 import sys
 sys.path.append('/Users/ankamenskiy/SmartDota/')
@@ -45,8 +46,17 @@ class ProMatchesDataloader(BaseDataloader):
 
     def __call__(self, amount: int) -> List[MatchData]:
         pro_matches_data = self._load_pro_matches(amount)
+        print('-'*20)
+        print(len(pro_matches_data), pro_matches_data)
+        print('Pro matches loaded')
+        print('-'*20)
         teams_data = self._load_teams_data(pro_matches_data)
+        print('-'*20)
+        print(teams_data)
+        print('Teams data loaded')
+        print('-'*20)
         extended_pro_matches_data = self._load_matches(pro_matches_data, teams_data)
+        print('Extended matches data loaded')
         self.data.extend(extended_pro_matches_data)
         return self.data
 
@@ -59,18 +69,21 @@ class ProMatchesDataloader(BaseDataloader):
 
         with tqdm(total=amount, desc='Loading pro matches data from OpenDota') as pbar:
             while len(pro_matches) < amount:
+                print('PRO MATCHES loaded:', len(pro_matches))
                 mathes_batch = requests.get(
                     url = self.API_HOST + '/proMatches',
                     params = {
                         'less_than_match_id': self.first_id + 1
                     }
                 ).json()
+                # print(mathes_batch)
                 self.firts_id = mathes_batch[-1]['match_id']
                 pro_matches.extend(mathes_batch)
 
                 pbar.update(len(mathes_batch))
                 time.sleep(10)
 
+        """ Если у команды еще нету id на сервисе, выкидываем """
         pro_matches = [
             ProMatchData(
                 match_id=pm.get('match_id', None),
@@ -82,7 +95,14 @@ class ProMatchesDataloader(BaseDataloader):
                 dire_score=pm.get('dire_score', None),
                 radiant_win=pm.get('radiant_win', None),
             )
-            for pm in pro_matches]
+            for pm in pro_matches
+            # list(          
+            #     filter(
+            #         lambda x: x.get('radiant_team_id', None) is not None and x.get('dire_team_id', None) is not None, 
+            #         pro_matches
+            #     )
+            # )
+        ]
 
         return pro_matches[:amount]
 
@@ -90,8 +110,10 @@ class ProMatchesDataloader(BaseDataloader):
 
         def load_team_data(radiant_team_id: int, dire_team_id: int, pos: int) -> dict:
             try:
-                resp_radiant = requests.get(url=self.API_HOST + f'/teams/{radiant_team_id}').json()
-                resp_dire = requests.get(url=self.API_HOST + f'/teams/{dire_team_id}').json()
+                resp_radiant = requests.get(url=self.API_HOST + f'/teams/{radiant_team_id}') #.json()
+                resp_radiant = resp_radiant.json() if resp_radiant.text else {}
+                resp_dire = requests.get(url=self.API_HOST + f'/teams/{dire_team_id}') #.json()
+                resp_dire = resp_dire.json() if resp_dire.text else {}
                 return (resp_radiant, resp_dire), (radiant_team_id, dire_team_id) , pos
             except:
                 return (None, None), (radiant_team_id, dire_team_id), pos
@@ -106,6 +128,7 @@ class ProMatchesDataloader(BaseDataloader):
             total = len(pro_matches_data)
             with tqdm(total=total, desc='Loading matches data from OpenDota') as pbar: 
                 while len(futures) > 0:
+                    print('TEAMS remained futures:', len(futures))
                     for future in tqdm(as_completed(futures), desc='Loading teams data from OpenDota'):
                         futures.popleft()
                         results, team_ids, pos = future.result()
@@ -157,6 +180,7 @@ class ProMatchesDataloader(BaseDataloader):
             total = len(pro_matches_data)
             with tqdm(total=total, desc='Loading matches data from OpenDota') as pbar: 
                 while len(futures) > 0:
+                    print('MATCHES remained futures:', len(futures))
                     for future in tqdm(as_completed(futures), desc='Loading extra data from OpenDota'):
                         futures.popleft()
                         result, match_id, pos = future.result()
@@ -164,7 +188,6 @@ class ProMatchesDataloader(BaseDataloader):
                         if result is None or 'error' in result:
                             futures.append(executor.submit(load_match_data, match_id=match_id, pos=pos))
                         else:
-                            # pro_matches_data[pos].update(result)
                             pro_matches_data[pos] = MatchData(
                                                         match_id=result.get('match_id', None),
                                                         pro_match_data=pro_matches_data[pos],
