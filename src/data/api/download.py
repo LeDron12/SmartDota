@@ -3,12 +3,14 @@ import pickle
 import json
 
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota/')
+sys.path.append('/home/ankamenskiy/SmartDota/')
 
 from typing import Any, List, Tuple
 from src.data.dataclasses.match import MatchData
 from src.data.dataclasses.pro_match import ProMatchData
 from src.data.dataclasses.team import TeamData
+from src.data.dataclasses.teamfight import TeamfightsData
+from src.data.dataclasses.player import InGamePlayerData
 
 from collections import deque
 from tqdm import tqdm
@@ -24,6 +26,8 @@ class BaseDataloader:
         self.lock = RLock()
         self.data = []
 
+        self.requests_cnt = 0
+
     def reset_dataloader(self) -> None:
         self.data = []
 
@@ -36,54 +40,81 @@ class BaseDataloader:
 
 class ProMatchesDataloader(BaseDataloader):
 
+    KEY_PATH = '/home/ankamenskiy/SmartDota/src/data/api/api.key'
     API_HOST = "https://api.opendota.com/api"
     MAX_MATCH_INDEX = 9999999998
 
-    def __init__(self, num_threads: int=4) -> None:
+    def __init__(self, num_threads: int=4, verbose: bool=False, use_key: bool=False) -> None:
         self.first_id = self.MAX_MATCH_INDEX
+
         self.num_threads = num_threads
+        self.verbose = verbose
+
+        self.key = self._read_key(use_key)
+        print(self.key)
+
         super().__init__()
 
     def __call__(self, amount: int) -> List[MatchData]:
         pro_matches_data = self._load_pro_matches(amount)
-        print('-'*20)
-        print(len(pro_matches_data), pro_matches_data)
-        print('Pro matches loaded')
-        print('-'*20)
+        if self.verbose:
+            print('-'*20, '\n', len(pro_matches_data), '\n', pro_matches_data, '\n', 'Pro matches loaded', '\n', '-'*20)
+
         teams_data = self._load_teams_data(pro_matches_data)
-        print('-'*20)
-        print(teams_data)
-        print('Teams data loaded')
-        print('-'*20)
+        if self.verbose:
+            print('-'*20, '\n', len(teams_data), '\n', teams_data, '\n', 'Teams data loaded', '\n', '-'*20)
+    
         extended_pro_matches_data = self._load_matches(pro_matches_data, teams_data)
         print('Extended matches data loaded')
+    
         self.data.extend(extended_pro_matches_data)
         return self.data
+    
+    def _read_key(self, use_key):
+        if use_key:
+            with open(self.KEY_PATH, 'r') as f:
+                return f.read()
+        return None
 
     def reset_dataloader(self) -> None:
         self.first_id = self.MAX_MATCH_INDEX
         self.data = []
+        self.requests_cnt = 0
 
     def _load_pro_matches(self, amount: int) -> List[ProMatchData]:
         pro_matches = []
 
         with tqdm(total=amount, desc='Loading pro matches data from OpenDota') as pbar:
             while len(pro_matches) < amount:
-                print('PRO MATCHES loaded:', len(pro_matches))
+
+                if self.verbose:
+                    print('PRO MATCHES loaded:', len(pro_matches))
+                    print('Totoal requests made:', self.requests_cnt)
+                
                 mathes_batch = requests.get(
                     url = self.API_HOST + '/proMatches',
                     params = {
+                        'api_key': self.key,
                         'less_than_match_id': self.first_id + 1
                     }
                 ).json()
-                # print(mathes_batch)
-                self.firts_id = mathes_batch[-1]['match_id']
-                pro_matches.extend(mathes_batch)
+                self.requests_cnt += 1
+
+                # if self.verbose:
+                #     print(mathes_batch)
+                
+                self.first_id = mathes_batch[-1]['match_id']
+                pro_matches.extend([ 
+                    elem for elem in 
+                    list(filter( 
+                        lambda x: x.get('radiant_team_id', None) is not None and x.get('dire_team_id', None) is not None, 
+                        mathes_batch 
+                    ))
+                ]) # Если у команды еще нету id на сервисе, выкидываем
 
                 pbar.update(len(mathes_batch))
                 time.sleep(10)
 
-        """ Если у команды еще нету id на сервисе, выкидываем """
         pro_matches = [
             ProMatchData(
                 match_id=pm.get('match_id', None),
@@ -107,28 +138,47 @@ class ProMatchesDataloader(BaseDataloader):
         return pro_matches[:amount]
 
     def _load_teams_data(self, pro_matches_data: List[ProMatchData]) -> List[Tuple[TeamData, TeamData]]:
+        
+        def request(team_id):
+            resp = requests.get(
+                        url=self.API_HOST + f'/teams/{team_id}',
+                        params={'api_key': self.key}
+                    )
+            self.requests_cnt += 1
+            return resp
 
         def load_team_data(radiant_team_id: int, dire_team_id: int, pos: int) -> dict:
             try:
-                resp_radiant = requests.get(url=self.API_HOST + f'/teams/{radiant_team_id}') #.json()
+                resp_radiant = request(radiant_team_id) #.json()
                 resp_radiant = resp_radiant.json() if resp_radiant.text else {}
-                resp_dire = requests.get(url=self.API_HOST + f'/teams/{dire_team_id}') #.json()
+                # if self.verbose:
+                #     print('radiant_team_id:', radiant_team_id, '\n' ,'resp_radiant:', resp_radiant, '\n', '-'*20)
+
+                resp_dire = request(dire_team_id) #.json()
                 resp_dire = resp_dire.json() if resp_dire.text else {}
+                # if self.verbose:
+                #     print('dire_team_id:', dire_team_id, '\n' ,'resp_dire:', resp_dire, '\n', '-'*20)
+                
                 return (resp_radiant, resp_dire), (radiant_team_id, dire_team_id) , pos
             except:
                 return (None, None), (radiant_team_id, dire_team_id), pos
             
+
         teams_data = [(None, None)] * len(pro_matches_data)
-        
+
         with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
             futures = deque()
             for i, match_data in enumerate(pro_matches_data):
                 futures.append(executor.submit(load_team_data, radiant_team_id=match_data.radiant_team_id, dire_team_id=match_data.dire_team_id, pos=i))
 
             total = len(pro_matches_data)
-            with tqdm(total=total, desc='Loading matches data from OpenDota') as pbar: 
+            with tqdm(total=total, desc='Loading teams data from OpenDota') as pbar: 
                 while len(futures) > 0:
-                    print('TEAMS remained futures:', len(futures))
+
+                    if self.verbose:
+                        print('TEAMS remained futures:', len(futures))
+                        print('Totoal requests made:', self.requests_cnt)
+                    
                     for future in tqdm(as_completed(futures), desc='Loading teams data from OpenDota'):
                         futures.popleft()
                         results, team_ids, pos = future.result()
@@ -157,7 +207,7 @@ class ProMatchesDataloader(BaseDataloader):
                                 )
                             )
 
-                    pbar.update(total - len(futures))
+                        pbar.update(total - len(futures))
                     if len(futures) > 0:
                         time.sleep(45)
 
@@ -167,7 +217,11 @@ class ProMatchesDataloader(BaseDataloader):
 
         def load_match_data(match_id: int, pos: int) -> dict:
             try:
-                resp = requests.get(url=self.API_HOST + f'/matches/{match_id}').json()
+                resp = requests.get(
+                    url=self.API_HOST + f'/matches/{match_id}',
+                    params={'api_key': self.key}
+                ).json()
+                self.requests_cnt += 1
                 return resp, match_id, pos
             except:
                 return None, match_id, pos
@@ -180,7 +234,11 @@ class ProMatchesDataloader(BaseDataloader):
             total = len(pro_matches_data)
             with tqdm(total=total, desc='Loading matches data from OpenDota') as pbar: 
                 while len(futures) > 0:
-                    print('MATCHES remained futures:', len(futures))
+
+                    if self.verbose:
+                        print('MATCHES remained futures:', len(futures))
+                        print('Totoal requests made:', self.requests_cnt)
+                    
                     for future in tqdm(as_completed(futures), desc='Loading extra data from OpenDota'):
                         futures.popleft()
                         result, match_id, pos = future.result()
@@ -188,6 +246,9 @@ class ProMatchesDataloader(BaseDataloader):
                         if result is None or 'error' in result:
                             futures.append(executor.submit(load_match_data, match_id=match_id, pos=pos))
                         else:
+                            # if self.verbose:
+                            #     print("result.get('players', [])", result.get('players', []))
+                            #     print("result.get('teamfights', [])", result.get('teamfights', []))
                             pro_matches_data[pos] = MatchData(
                                                         match_id=result.get('match_id', None),
                                                         pro_match_data=pro_matches_data[pos],
@@ -204,20 +265,28 @@ class ProMatchesDataloader(BaseDataloader):
                                                         radiant_score=result.get('radiant_score', None),
                                                         radiant_win=result.get('radiant_win', None),
                                                         radiant_xp_adv=result.get('radiant_xp_adv', None),
-                                                        teamfights=result.get('teamfights', None),
+                                                        # teamfights=result.get('teamfights', None),
+                                                        teamfights=TeamfightsData(
+                                                            result.get('teamfights', [])
+                                                        ),
                                                         tower_status_dire=result.get('tower_status_dire', None),
                                                         tower_status_radiant=result.get('tower_status_radiant', None),
                                                         version=result.get('version', None),
                                                         series_id=result.get('series_id', None),
                                                         radiant_team=teams_data[pos][0],
                                                         dire_team=teams_data[pos][1],
-                                                        players=result.get('players', None),
+                                                        # players=result.get('players', None),
+                                                        players=[
+                                                            InGamePlayerData(player=p)
+                                                            for p
+                                                            in result.get('players', [])
+                                                        ],
                                                         patch=result.get('patch', None),
                                                         throw=result.get('throw', None),
                                                         comeback=result.get('comeback', None)
                                                     )
 
-                    pbar.update(total - len(futures))
+                        pbar.update(total - len(futures))
                     if len(futures) > 0:
                         time.sleep(45)
 

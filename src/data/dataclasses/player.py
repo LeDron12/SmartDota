@@ -1,10 +1,13 @@
 from dataclasses import dataclass
 
-from typing import Dict, List, Union, Optional
+from typing import Dict, List, Union, Optional, Any
+
 
 @dataclass
 class InGamePlayerData:
-    x: int
+    player: Dict[Any, Any] # TODO: check example in opendota api to understand whats going on !!!!!!!
+
+
 
 # match = requests.get(url = "https://api.opendota.com/api/matches/" + '7472080788').json()
 # print(match['players'])

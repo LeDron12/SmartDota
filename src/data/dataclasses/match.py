@@ -3,7 +3,7 @@ from typing import Dict, List, Union, Optional
 
 from src.data.dataclasses.draft import DraftItem, PickBanItem
 from src.data.dataclasses.objective import ObjectiveData
-from src.data.dataclasses.teamfight import TeamfightData
+from src.data.dataclasses.teamfight import TeamfightsData
 from src.data.dataclasses.team import TeamData
 from src.data.dataclasses.player import InGamePlayerData
 from src.data.dataclasses.pro_match import ProMatchData
@@ -37,7 +37,8 @@ class MatchData:
     radiant_score: Optional[int] 
     radiant_win: Optional[bool]
     radiant_xp_adv: Optional[List[int]]
-    teamfights: Optional[List[TeamfightData]] # pizdec
+    # teamfights: Optional[List[TeamfightData]] # pizdec
+    teamfights: Optional[TeamfightsData] # TODO: remake with List[TeamfightData]
     tower_status_dire: Optional[int] # хз че за циферка
     tower_status_radiant: Optional[int] # хз че за циферка
     version: Optional[int] # мб версия игры?
@@ -92,8 +93,8 @@ class MatchData:
                 )
             for objective in self.objectives]
         
-        if self.teamfights is not None:
-            self.teamfights = None
+        # if self.teamfights is not None:
+        #     self.teamfights = None
 
-        if self.players is not None:
-            self.players = None
+        # if self.players is not None:
+        #     self.players = None

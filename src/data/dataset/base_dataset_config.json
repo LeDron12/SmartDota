@@ -1,0 +1,43 @@
+{
+    "descr": "",
+    "dataset_path": "",
+
+    "draft": {
+        "hero_stats": {
+            "id": false,
+            "winrate": false,
+            "banrate": false,
+            "matchups": {
+                "allies": {
+                    "2_pairs": false,
+                    "3_pairs": false,
+                    "4_pairs": false,
+                    "5_pairs": false
+                },
+                "enemies": {
+                    "2_pairs": false,
+                    "3_pairs": false,
+                    "4_pairs": false,
+                    "5_pairs": false
+                }
+            }
+        },
+        "team_stats": {
+            "rating": false,
+            "wins": false,
+            "losses": false
+        },
+        "player_stats": {
+            "mmr": false,
+            "lane_pos": false,
+            "last_games_shape": false
+        },
+        "player_to_hero": {
+            "heroes_skill": false
+        }
+    },
+
+    "match": {
+        
+    }
+}

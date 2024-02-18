@@ -1,5 +1,6 @@
 {
-    "dataset_path": "/data/pro_2000",
+    "descr": "Только ID героев",
+    "dataset_path": "",
 
     "draft": {
         "hero_stats": {
@@ -20,6 +21,11 @@
                     "5_pairs": false
                 }
             }
+        },
+        "team_stats": {
+            "rating": false,
+            "wins": false,
+            "losses": false
         },
         "player_stats": {
             "mmr": false,
