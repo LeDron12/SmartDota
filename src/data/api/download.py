@@ -2,6 +2,7 @@ import requests
 import pickle
 import json
 
+import os
 import sys
 sys.path.append('/Users/ankamenskiy/SmartDota/')
 
@@ -45,12 +46,14 @@ class ProMatchesDataloader(BaseDataloader):
     MAX_MATCH_INDEX = 9999999998
 
     def __init__(self, 
-                 num_threads: int=4, 
+                 num_threads: int=4,
+                 batch_size: int=90,
                  verbose: bool=False, 
                  debug: bool=False, 
                  use_key: bool=False
                  ) -> None:
         self.first_id = self.MAX_MATCH_INDEX
+        self.batch_size = batch_size
 
         self.num_threads = num_threads
         self.verbose = verbose
@@ -64,18 +67,26 @@ class ProMatchesDataloader(BaseDataloader):
 
     def __call__(self, amount: int) -> List[MatchData]:
 
-        pro_matches_data = self.__load_pro_matches(amount)
-        if self.verbose:
-            print('-'*20, '\n', len(pro_matches_data), '\n', pro_matches_data, '\n', 'Pro matches loaded', '\n', '-'*20)
+        batch_sizes = [self.batch_size]*(amount // self.batch_size) + [amount % self.batch_size]
+        
+        for i, batch_size in tqdm(enumerate(batch_sizes), desc='Loading matches batched progress:'):
+            if self.verbose:
+                print(f'Loading batch: {i + 1}/{len(batch_sizes)}\nBatch size: {batch_size}\n', '-'*100, '\n')
 
-        teams_data = self.__load_teams_data(pro_matches_data)
-        if self.verbose:
-            print('-'*20, '\n', len(teams_data), '\n', teams_data, '\n', 'Teams data loaded', '\n', '-'*20)
-    
-        extended_pro_matches_data = self.__load_matches(pro_matches_data, teams_data)
-        print('Extended matches data loaded')
-    
-        self.data.extend(extended_pro_matches_data)
+            pro_matches_data = self.__load_pro_matches(amount)
+            if self.verbose:
+                print('-'*20, '\n', len(pro_matches_data), '\n', pro_matches_data, '\n', 'Pro matches loaded', '\n', '-'*20)
+
+            teams_data = self.__load_teams_data(pro_matches_data)
+            if self.verbose:
+                print('-'*20, '\n', len(teams_data), '\n', teams_data, '\n', 'Teams data loaded', '\n', '-'*20)
+        
+            extended_pro_matches_data = self.__load_matches(pro_matches_data, teams_data)
+            print('Extended matches data loaded')
+        
+            self.data.extend(extended_pro_matches_data)
+            self.save(f'/Users/ankamenskiy/SmartDota/cache/download_checkpoints/pro_{len(self.data)}-{amount}.ckpt')
+
         return self.data
     
 
