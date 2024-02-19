@@ -1,15 +1,19 @@
 import sys
-sys.path.append('/home/ankamenskiy/SmartDota/')
+sys.path.append('/Users/ankamenskiy/SmartDota/')
 
 from src.data.api.download import ProMatchesDataloader
 
-TOTAL_AMOUNT = 1_000
-# TOTAL_AMOUNT = 10
-path = f'../../cache/pro_{TOTAL_AMOUNT}'
 
-downloader = ProMatchesDataloader(4)
-matches = downloader(TOTAL_AMOUNT)
-downloader.save(path)
+downloader = ProMatchesDataloader(4, verbose=True, use_key=True)
+
+TOTAL_AMOUNT_LOAD = 1_000
+path = f'../../cache/pro_{TOTAL_AMOUNT_LOAD}'
 downloader.load(path)
 
-print(downloader.data)
+TOTAL_AMOUNT_SAVE = 5_000 # 1000 + 4000
+path = f'../../cache/pro_{TOTAL_AMOUNT_SAVE}'
+matches = downloader(TOTAL_AMOUNT_SAVE - TOTAL_AMOUNT_LOAD)
+downloader.save(path)
+
+print('Loaded matches: ', len(downloader.data))
+print('Requests count: ', downloader.requests_cnt)
