@@ -4,7 +4,7 @@ sys.path.append('/Users/ankamenskiy/SmartDota/')
 from src.data.api.download import ProMatchesDataloader
 
 
-downloader = ProMatchesDataloader(4, verbose=True, use_key=True)
+downloader = ProMatchesDataloader(num_threads=4, verbose=True, use_key=True)
 
 TOTAL_AMOUNT_LOAD = 1_000
 path = f'../../cache/pro_{TOTAL_AMOUNT_LOAD}'

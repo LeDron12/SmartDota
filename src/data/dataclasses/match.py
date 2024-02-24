@@ -7,6 +7,7 @@ from src.data.dataclasses.teamfight import TeamfightsData
 from src.data.dataclasses.team import TeamData
 from src.data.dataclasses.player import InGamePlayerData
 from src.data.dataclasses.pro_match import ProMatchData
+from src.data.dataclasses.public_match import PublicMatchData
 
 
 # @dataclass
@@ -23,6 +24,7 @@ from src.data.dataclasses.pro_match import ProMatchData
 @dataclass
 class MatchData:
     match_id: int
+    public_match_data: Optional[PublicMatchData]
     pro_match_data: Optional[ProMatchData]
     barracks_status_dire: Optional[int] # хз че за циферка
     barracks_status_radiant: Optional[int] # хз че за циферка
