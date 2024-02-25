@@ -34,5 +34,3 @@ def make_hero_onehot(df: pd.DataFrame,
     assert df2.shape[1] - df.shape[1] == 2 * (126 - 1)
 
     return df2
-    
-    
