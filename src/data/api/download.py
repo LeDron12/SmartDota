@@ -4,7 +4,7 @@ import json
 
 import os
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota/')
+sys.path.append('/home/david/SmartDota/')
 
 from typing import Any, List, Tuple
 from src.data.dataclasses.match import MatchData
@@ -41,7 +41,7 @@ class BaseDataloader:
 
 class ProMatchesDataloader(BaseDataloader):
 
-    KEY_PATH = '/Users/ankamenskiy/SmartDota/src/data/api/api.key'
+    KEY_PATH = '/home/david/SmartDota/src/data/api/api.key'
     API_HOST = "https://api.opendota.com/api"
     MAX_MATCH_INDEX = 9999999998
 
@@ -85,7 +85,7 @@ class ProMatchesDataloader(BaseDataloader):
             print('Extended matches data loaded')
         
             self.data.extend(extended_pro_matches_data)
-            self.save(f'/Users/ankamenskiy/SmartDota/cache/download_checkpoints/pro_{len(self.data)}-{amount}.ckpt')
+            self.save(f'/home/david/SmartDota/cache/download_checkpoints/pro_{len(self.data)}-{amount}.ckpt')
 
         return self.data
     

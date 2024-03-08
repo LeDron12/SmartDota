@@ -1,7 +1,7 @@
 import requests
 
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota/')
+sys.path.append('/home/david/SmartDota/')
 
 from typing import Any, List, Tuple
 
@@ -24,11 +24,11 @@ import logging
 
 class ProMatchesDataloader(BaseDataloader):
 
-    # DEBUG_LOGS_FILE = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/pro_matches_downloader_log.debug'
-    # INFO_LOGS_FILE = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/pro_matches_downloader_log.info'
-    LOGS_FILE = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/logs/pro_matches_downloader.log'
+    # DEBUG_LOGS_FILE = '/home/david/SmartDota/src/data/api/OpenDota/pro_matches_downloader_log.debug'
+    # INFO_LOGS_FILE = '/home/david/SmartDota/src/data/api/OpenDota/pro_matches_downloader_log.info'
+    LOGS_FILE = '/home/david/SmartDota/src/data/api/OpenDota/logs/pro_matches_downloader.log'
 
-    KEY_PATH = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/opendota_api.key'
+    KEY_PATH = '/home/david/SmartDota/src/data/api/OpenDota/opendota_api.key'
     API_HOST = "https://api.opendota.com/api"
     MAX_MATCH_INDEX = 9999999998
 
@@ -85,7 +85,7 @@ class ProMatchesDataloader(BaseDataloader):
             # print('Extended matches data loaded')
         
             self.data.extend(extended_pro_matches_data)
-            self.save(f'/Users/ankamenskiy/SmartDota/cache/download_checkpoints/pro_{len(self.data)}-{amount}.ckpt')
+            self.save(f'/home/david/SmartDota/cache/download_checkpoints/pro_{len(self.data)}-{amount}.ckpt')
 
         return self.data
     

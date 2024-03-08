@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota/')
+sys.path.append('/home/david/SmartDota/')
 
 from typing import List
 from src.data.dataclasses.match import MatchData

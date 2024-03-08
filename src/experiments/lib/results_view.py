@@ -22,7 +22,7 @@ def make_single_prediction(model: Any, # Cbt or Sklearn model
     radiant_picks = [e['hero_id'] for e in pb[:5]]
     dire_picks = [e['hero_id'] for e in pb[5:]]
 
-    with open('/Users/ankamenskiy/SmartDota/data/heroes.json', 'r') as f:
+    with open('/home/david/SmartDota/data/heroes.json', 'r') as f:
         existing_ids = sorted([h['id'] for h in json.loads(f.read())])
 
     existing_ids = \
@@ -60,7 +60,7 @@ def per_hero_metrics(radiant_heroes: List[List[int]],
     def squeeze_ohe(heroes):
         return list(filter(lambda x: x != 0, [i + 1 if hero == 1 else 0 for i, hero in enumerate(heroes)]))
 
-    with open('/Users/ankamenskiy/SmartDota/data/heroes.json', 'r') as f:
+    with open('/home/david/SmartDota/data/heroes.json', 'r') as f:
         all_heroes = json.loads(f.read())
 
     if len(radiant_heroes) == len(all_heroes):

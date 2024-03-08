@@ -1,7 +1,7 @@
 import requests
 
 import sys
-sys.path.append('/Users/ankamenskiy/SmartDota/')
+sys.path.append('/home/david/SmartDota/')
 
 from typing import Any, List, Tuple
 
@@ -24,11 +24,11 @@ import logging
 
 class PublicMatchesDataloader(BaseDataloader):
 
-    KEY_PATH = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/opendota_api.key'
+    KEY_PATH = '/home/david/SmartDota/src/data/api/OpenDota/opendota_api.key'
     API_HOST = "https://api.opendota.com/api"
     MAX_MATCH_INDEX = 9999999998
 
-    LOGS_FILE = '/Users/ankamenskiy/SmartDota/src/data/api/OpenDota/logs/public_matches_downloader.log'
+    LOGS_FILE = '/home/david/SmartDota/src/data/api/OpenDota/logs/public_matches_downloader.log'
 
     def __init__(self, 
                  patch_timestamp_start: int, # 1703278800 (23 dec 2023) - 7.35b
@@ -82,7 +82,7 @@ class PublicMatchesDataloader(BaseDataloader):
 
             self.data.extend(public_matches_data)
             # self.data.extend(extended_public_matches_data)
-            self.save(f'/Users/ankamenskiy/SmartDota/cache/download_checkpoints/public_{len(self.data)}-{amount}.ckpt')
+            self.save(f'/home/david/SmartDota/cache/download_checkpoints/public_{len(self.data)}-{amount}.ckpt')
 
         return self.data
     
