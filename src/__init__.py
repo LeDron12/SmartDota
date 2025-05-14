@@ -1,0 +1,3 @@
+"""
+SmartDota package
+""" 

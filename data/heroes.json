@@ -10,7 +10,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 2,
@@ -24,7 +24,7 @@
             "Disabler",
             "Carry"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 3,
@@ -38,7 +38,7 @@
             "Nuker",
             "Durable"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 4,
@@ -52,7 +52,7 @@
             "Nuker",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 5,
@@ -65,7 +65,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 6,
@@ -78,7 +78,7 @@
             "Disabler",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 7,
@@ -92,7 +92,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 8,
@@ -105,13 +105,13 @@
             "Pusher",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 9,
         "name": "npc_dota_hero_mirana",
         "localized_name": "Mirana",
-        "primary_attr": "all",
+        "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
@@ -120,7 +120,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 10,
@@ -135,7 +135,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 11,
@@ -147,7 +147,7 @@
             "Carry",
             "Nuker"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 12,
@@ -161,7 +161,7 @@
             "Pusher",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 13,
@@ -175,7 +175,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 14,
@@ -189,7 +189,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 15,
@@ -203,7 +203,7 @@
             "Nuker",
             "Pusher"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 16,
@@ -218,7 +218,7 @@
             "Nuker",
             "Escape"
         ],
-        "legs": null
+        "legs": 6
     },
     {
         "id": 17,
@@ -233,7 +233,7 @@
             "Initiator",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 18,
@@ -248,7 +248,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 19,
@@ -264,13 +264,13 @@
             "Durable",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 20,
         "name": "npc_dota_hero_vengefulspirit",
         "localized_name": "Vengeful Spirit",
-        "primary_attr": "all",
+        "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
             "Support",
@@ -279,7 +279,7 @@
             "Nuker",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 21,
@@ -294,7 +294,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 22,
@@ -306,7 +306,7 @@
             "Nuker",
             "Carry"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 23,
@@ -322,7 +322,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 25,
@@ -336,7 +336,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 26,
@@ -350,7 +350,7 @@
             "Nuker",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 27,
@@ -365,7 +365,7 @@
             "Nuker",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 28,
@@ -380,7 +380,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 29,
@@ -395,7 +395,7 @@
             "Nuker",
             "Carry"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 30,
@@ -408,7 +408,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 31,
@@ -420,7 +420,7 @@
             "Support",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 32,
@@ -433,7 +433,7 @@
             "Escape",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 33,
@@ -446,7 +446,7 @@
             "Initiator",
             "Pusher"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 34,
@@ -459,7 +459,7 @@
             "Nuker",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 35,
@@ -471,7 +471,7 @@
             "Carry",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 36,
@@ -485,7 +485,7 @@
             "Durable",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 37,
@@ -498,7 +498,7 @@
             "Initiator",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 38,
@@ -512,7 +512,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 39,
@@ -525,7 +525,7 @@
             "Nuker",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 40,
@@ -540,7 +540,7 @@
             "Pusher",
             "Disabler"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 41,
@@ -555,7 +555,7 @@
             "Escape",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 42,
@@ -570,13 +570,13 @@
             "Disabler",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 43,
         "name": "npc_dota_hero_death_prophet",
         "localized_name": "Death Prophet",
-        "primary_attr": "int",
+        "primary_attr": "all",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
@@ -584,7 +584,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 44,
@@ -596,7 +596,7 @@
             "Carry",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 45,
@@ -608,7 +608,7 @@
             "Nuker",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 46,
@@ -620,7 +620,7 @@
             "Carry",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 47,
@@ -634,7 +634,7 @@
             "Initiator",
             "Disabler"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 48,
@@ -647,7 +647,7 @@
             "Nuker",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 49,
@@ -663,7 +663,7 @@
             "Initiator",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 50,
@@ -676,13 +676,13 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 51,
         "name": "npc_dota_hero_rattletrap",
         "localized_name": "Clockwerk",
-        "primary_attr": "all",
+        "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
             "Initiator",
@@ -690,7 +690,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 52,
@@ -711,7 +711,7 @@
         "id": 53,
         "name": "npc_dota_hero_furion",
         "localized_name": "Nature's Prophet",
-        "primary_attr": "int",
+        "primary_attr": "all",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
@@ -719,7 +719,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 54,
@@ -733,20 +733,20 @@
             "Escape",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 55,
         "name": "npc_dota_hero_dark_seer",
         "localized_name": "Dark Seer",
-        "primary_attr": "all",
+        "primary_attr": "int",
         "attack_type": "Melee",
         "roles": [
             "Initiator",
             "Escape",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 56,
@@ -759,7 +759,7 @@
             "Escape",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 57,
@@ -772,7 +772,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 58,
@@ -786,7 +786,7 @@
             "Durable",
             "Disabler"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 59,
@@ -799,7 +799,7 @@
             "Durable",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 60,
@@ -814,13 +814,13 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 61,
         "name": "npc_dota_hero_broodmother",
         "localized_name": "Broodmother",
-        "primary_attr": "all",
+        "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
             "Carry",
@@ -828,7 +828,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 8
     },
     {
         "id": 62,
@@ -840,7 +840,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 63,
@@ -852,7 +852,7 @@
             "Carry",
             "Escape"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 64,
@@ -866,7 +866,7 @@
             "Pusher",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 65,
@@ -879,32 +879,32 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 66,
         "name": "npc_dota_hero_chen",
         "localized_name": "Chen",
-        "primary_attr": "all",
+        "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
             "Support",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 67,
         "name": "npc_dota_hero_spectre",
         "localized_name": "Spectre",
-        "primary_attr": "agi",
+        "primary_attr": "all",
         "attack_type": "Melee",
         "roles": [
             "Carry",
             "Durable",
             "Escape"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 68,
@@ -917,7 +917,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 69,
@@ -932,7 +932,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 70,
@@ -945,7 +945,7 @@
             "Durable",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 71,
@@ -960,7 +960,7 @@
             "Durable",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 72,
@@ -973,7 +973,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 73,
@@ -989,13 +989,13 @@
             "Initiator",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 74,
         "name": "npc_dota_hero_invoker",
         "localized_name": "Invoker",
-        "primary_attr": "all",
+        "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
@@ -1004,7 +1004,7 @@
             "Escape",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 75,
@@ -1019,7 +1019,7 @@
             "Initiator",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 76,
@@ -1032,13 +1032,13 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 77,
         "name": "npc_dota_hero_lycan",
         "localized_name": "Lycan",
-        "primary_attr": "all",
+        "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
             "Carry",
@@ -1046,7 +1046,7 @@
             "Durable",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 78,
@@ -1061,7 +1061,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 79,
@@ -1075,20 +1075,20 @@
             "Initiator",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 80,
         "name": "npc_dota_hero_lone_druid",
         "localized_name": "Lone Druid",
-        "primary_attr": "all",
+        "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
             "Pusher",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 81,
@@ -1103,7 +1103,7 @@
             "Pusher",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 82,
@@ -1119,7 +1119,7 @@
             "Initiator",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 83,
@@ -1134,7 +1134,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 84,
@@ -1149,7 +1149,7 @@
             "Durable",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 85,
@@ -1163,7 +1163,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 86,
@@ -1176,7 +1176,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 87,
@@ -1190,7 +1190,7 @@
             "Nuker",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 88,
@@ -1204,7 +1204,7 @@
             "Initiator",
             "Escape"
         ],
-        "legs": null
+        "legs": 6
     },
     {
         "id": 89,
@@ -1220,7 +1220,7 @@
             "Initiator",
             "Escape"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 90,
@@ -1233,7 +1233,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 91,
@@ -1246,7 +1246,7 @@
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 92,
@@ -1261,7 +1261,7 @@
             "Disabler",
             "Pusher"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 93,
@@ -1275,7 +1275,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 94,
@@ -1288,7 +1288,7 @@
             "Disabler",
             "Durable"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 95,
@@ -1302,7 +1302,7 @@
             "Disabler",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 96,
@@ -1317,7 +1317,7 @@
             "Nuker",
             "Escape"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 97,
@@ -1331,20 +1331,20 @@
             "Nuker",
             "Escape"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 98,
         "name": "npc_dota_hero_shredder",
         "localized_name": "Timbersaw",
-        "primary_attr": "all",
+        "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
             "Nuker",
             "Durable",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 99,
@@ -1358,7 +1358,7 @@
             "Initiator",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 100,
@@ -1371,7 +1371,7 @@
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 101,
@@ -1384,7 +1384,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 102,
@@ -1397,7 +1397,7 @@
             "Carry",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 103,
@@ -1411,7 +1411,7 @@
             "Nuker",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 104,
@@ -1426,7 +1426,7 @@
             "Durable",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 105,
@@ -1438,7 +1438,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 6
     },
     {
         "id": 106,
@@ -1453,7 +1453,7 @@
             "Disabler",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 107,
@@ -1468,7 +1468,7 @@
             "Initiator",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 108,
@@ -1483,7 +1483,7 @@
             "Durable",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 109,
@@ -1496,13 +1496,13 @@
             "Pusher",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 110,
         "name": "npc_dota_hero_phoenix",
         "localized_name": "Phoenix",
-        "primary_attr": "all",
+        "primary_attr": "str",
         "attack_type": "Ranged",
         "roles": [
             "Support",
@@ -1511,7 +1511,7 @@
             "Escape",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 111,
@@ -1525,33 +1525,33 @@
             "Disabler",
             "Escape"
         ],
-        "legs": 0
+        "legs": 2
     },
     {
         "id": 112,
         "name": "npc_dota_hero_winter_wyvern",
         "localized_name": "Winter Wyvern",
-        "primary_attr": "all",
+        "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
             "Support",
             "Disabler",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 113,
         "name": "npc_dota_hero_arc_warden",
         "localized_name": "Arc Warden",
-        "primary_attr": "agi",
+        "primary_attr": "all",
         "attack_type": "Ranged",
         "roles": [
             "Carry",
             "Escape",
             "Nuker"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 114,
@@ -1565,13 +1565,13 @@
             "Disabler",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 119,
         "name": "npc_dota_hero_dark_willow",
         "localized_name": "Dark Willow",
-        "primary_attr": "all",
+        "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
             "Support",
@@ -1579,7 +1579,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 120,
@@ -1595,7 +1595,7 @@
             "Escape",
             "Initiator"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 121,
@@ -1609,7 +1609,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 0
     },
     {
         "id": 123,
@@ -1623,7 +1623,7 @@
             "Escape",
             "Disabler"
         ],
-        "legs": null
+        "legs": 4
     },
     {
         "id": 126,
@@ -1637,7 +1637,7 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 128,
@@ -1651,7 +1651,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 129,
@@ -1665,7 +1665,21 @@
             "Disabler",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
+    },
+    {
+        "id": 131,
+        "name": "npc_dota_hero_ringmaster",
+        "localized_name": "Ringmaster",
+        "primary_attr": "int",
+        "attack_type": "Ranged",
+        "roles": [
+            "Support",
+            "Nuker",
+            "Escape",
+            "Disabler"
+        ],
+        "legs": 2
     },
     {
         "id": 135,
@@ -1677,7 +1691,7 @@
             "Carry",
             "Durable"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 136,
@@ -1692,7 +1706,7 @@
             "Disabler",
             "Escape"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 137,
@@ -1705,7 +1719,7 @@
             "Durable",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
     },
     {
         "id": 138,
@@ -1718,6 +1732,19 @@
             "Nuker",
             "Disabler"
         ],
-        "legs": null
+        "legs": 2
+    },
+    {
+        "id": 145,
+        "name": "npc_dota_hero_kez",
+        "localized_name": "Kez",
+        "primary_attr": "agi",
+        "attack_type": "Melee",
+        "roles": [
+            "Carry",
+            "Escape",
+            "Disabler"
+        ],
+        "legs": 2
     }
 ]

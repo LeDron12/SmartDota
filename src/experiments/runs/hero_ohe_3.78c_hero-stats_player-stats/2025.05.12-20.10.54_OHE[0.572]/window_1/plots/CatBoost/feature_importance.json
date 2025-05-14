@@ -1,0 +1,1240 @@
+{
+  "top_features": [
+    {
+      "feature": "dire_avg_assists",
+      "importance": 18.96314298212206
+    },
+    {
+      "feature": "radiant_avg_deaths",
+      "importance": 18.59521191759764
+    },
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 18.041226143748077
+    },
+    {
+      "feature": "dire_avg_deaths",
+      "importance": 15.707315588472067
+    },
+    {
+      "feature": "radiant_avg_assists",
+      "importance": 13.85932701606963
+    },
+    {
+      "feature": "radiant_avg_kills",
+      "importance": 7.113269324778939
+    },
+    {
+      "feature": "dire_avg_kills",
+      "importance": 6.0598751196332845
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 1.1708927635321111
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.4897391440462131
+    },
+    {
+      "feature": "actualRank",
+      "importance": 0.0
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_99",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_97",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_90",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_96",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_95",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_94",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_93",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_92",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_91",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_matches_played",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "dire_avg_assists",
+      "importance": 18.96314298212206
+    },
+    {
+      "feature": "radiant_avg_deaths",
+      "importance": 18.59521191759764
+    },
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 18.041226143748077
+    },
+    {
+      "feature": "dire_avg_deaths",
+      "importance": 15.707315588472067
+    },
+    {
+      "feature": "radiant_avg_assists",
+      "importance": 13.85932701606963
+    },
+    {
+      "feature": "radiant_avg_kills",
+      "importance": 7.113269324778939
+    },
+    {
+      "feature": "dire_avg_kills",
+      "importance": 6.0598751196332845
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 1.1708927635321111
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.4897391440462131
+    },
+    {
+      "feature": "actualRank",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_62",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_61",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_60",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_59",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_64",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_58",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_57",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_56",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_55",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_54",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_53",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_63",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_66",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_65",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_75",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_82",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_81",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_80",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_79",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_78",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_77",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_76",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_74",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_51",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_73",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_72",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_71",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_70",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_69",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_68",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_67",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_52",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_46",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_50",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_33",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_19",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_20",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_21",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_22",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_23",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_24",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_25",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_26",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_27",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_28",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_29",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_30",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_31",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_32",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_34",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_49",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_35",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_36",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_37",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_38",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_39",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_40",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_41",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_42",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_43",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_44",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_45",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_84",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_47",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_48",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_83",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_89",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_85",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_behavior",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_121",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_122",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_123",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_124",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_125",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_last_hits",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_denies",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_damage",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_healing",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_role_match",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_account_level",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_119",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_dota_plus",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_smurf_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_time_since_last",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_matches_played",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_last_hits",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_denies",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_damage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_healing",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_role_match",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_behavior",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_account_level",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_dota_plus",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_smurf_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_time_since_last",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_120",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_118",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_86",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_101",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_87",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_88",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_0",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_90",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_91",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_92",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_93",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_94",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_95",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_96",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_97",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_98",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_99",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_100",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_102",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_117",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_103",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_104",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_105",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_106",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_107",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_108",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_109",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_110",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_111",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_112",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_113",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_114",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_115",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_116",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_18",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_17",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_16",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_44",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_50",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_49",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_48",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_47",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_46",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_45",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_43",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_52",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_42",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_41",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_40",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_39",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_38",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_37",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_51",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_53",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_35",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_62",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_68",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_67",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_66",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_65",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_64",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_63",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_61",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_54",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_60",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_59",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_58",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_57",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_56",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_55",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_36",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_34",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_70",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_8",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_14",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_13",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_12",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_11",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_10",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_9",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_7",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_16",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_6",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_5",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_4",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_3",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_2",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_1",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_15",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_17",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_33",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_26",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_32",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_31",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_30",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_29",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_28",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_27",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_25",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_18",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_24",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_23",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_22",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_21",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_20",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_19",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_69",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_71",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_15",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_116",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_122",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_121",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_120",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_119",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_118",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_117",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_115",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_124",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_114",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_113",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_112",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_111",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_110",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_109",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_123",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_125",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_107",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_8",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_14",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_13",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_12",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_11",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_10",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_9",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_7",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_0",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_6",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_5",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_4",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_3",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_2",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_1",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_108",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_106",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_72",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_80",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_86",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_85",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_84",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_83",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_82",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_81",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_79",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_88",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_78",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_77",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_76",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_75",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_74",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_73",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_87",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_89",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_105",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_98",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_104",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_103",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_102",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_101",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_100",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_99",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_97",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_90",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_96",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_95",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_94",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_93",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_92",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_91",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_matches_played",
+      "importance": 0.0
+    }
+  ]
+}

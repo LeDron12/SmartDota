@@ -1,0 +1,92 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 47.81448619937459
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 25.10294235790375
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 15.976893819653156
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 11.105677623068527
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 47.81448619937459
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 25.10294235790375
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 15.976893819653156
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 11.105677623068527
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 47.81448619937459
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 25.10294235790375
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 15.976893819653156
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 11.105677623068527
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    }
+  ]
+}

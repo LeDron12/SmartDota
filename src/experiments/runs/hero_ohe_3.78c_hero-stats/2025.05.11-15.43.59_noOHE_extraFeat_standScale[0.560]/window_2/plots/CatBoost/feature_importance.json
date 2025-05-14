@@ -1,0 +1,92 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.61282876440954
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.779617204667723
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.798626389473544
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.808927641449195
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.61282876440954
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.779617204667723
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.798626389473544
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.808927641449195
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.61282876440954
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.779617204667723
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.798626389473544
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.808927641449195
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ]
+}

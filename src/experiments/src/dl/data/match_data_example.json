@@ -1,0 +1,704 @@
+{
+    "match_id": 8242058250,
+    "radiant_win": False,
+    "start_time": 1743800493,
+    "picks_bans": [
+        {
+            "is_pick": False,
+            "hero_id": 43,
+            "team": 1,
+            "order": 0
+        },
+        {
+            "is_pick": False,
+            "hero_id": 21,
+            "team": 0,
+            "order": 1
+        },
+        {
+            "is_pick": False,
+            "hero_id": 126,
+            "team": 0,
+            "order": 2
+        },
+        {
+            "is_pick": False,
+            "hero_id": 65,
+            "team": 1,
+            "order": 3
+        },
+        {
+            "is_pick": False,
+            "hero_id": 92,
+            "team": 0,
+            "order": 4
+        },
+        {
+            "is_pick": False,
+            "hero_id": 40,
+            "team": 0,
+            "order": 5
+        },
+        {
+            "is_pick": False,
+            "hero_id": 38,
+            "team": 1,
+            "order": 6
+        },
+        {
+            "is_pick": True,
+            "hero_id": 75,
+            "team": 1,
+            "order": 7
+        },
+        {
+            "is_pick": True,
+            "hero_id": 5,
+            "team": 0,
+            "order": 8
+        },
+        {
+            "is_pick": False,
+            "hero_id": 120,
+            "team": 1,
+            "order": 9
+        },
+        {
+            "is_pick": False,
+            "hero_id": 136,
+            "team": 1,
+            "order": 10
+        },
+        {
+            "is_pick": False,
+            "hero_id": 105,
+            "team": 0,
+            "order": 11
+        },
+        {
+            "is_pick": True,
+            "hero_id": 63,
+            "team": 0,
+            "order": 12
+        },
+        {
+            "is_pick": True,
+            "hero_id": 39,
+            "team": 1,
+            "order": 13
+        },
+        {
+            "is_pick": True,
+            "hero_id": 26,
+            "team": 1,
+            "order": 14
+        },
+        {
+            "is_pick": True,
+            "hero_id": 59,
+            "team": 0,
+            "order": 15
+        },
+        {
+            "is_pick": True,
+            "hero_id": 44,
+            "team": 0,
+            "order": 16
+        },
+        {
+            "is_pick": True,
+            "hero_id": 16,
+            "team": 1,
+            "order": 17
+        },
+        {
+            "is_pick": False,
+            "hero_id": 53,
+            "team": 1,
+            "order": 18
+        },
+        {
+            "is_pick": False,
+            "hero_id": 22,
+            "team": 0,
+            "order": 19
+        },
+        {
+            "is_pick": False,
+            "hero_id": 37,
+            "team": 0,
+            "order": 20
+        },
+        {
+            "is_pick": False,
+            "hero_id": 128,
+            "team": 1,
+            "order": 21
+        },
+        {
+            "is_pick": True,
+            "hero_id": 46,
+            "team": 1,
+            "order": 22
+        },
+        {
+            "is_pick": True,
+            "hero_id": 97,
+            "team": 0,
+            "order": 23
+        }
+    ],
+    "radiant_team_id": 8849990,
+    "dire_team_id": 9005364,
+    "objectives": [
+        {
+            "time": 72,
+            "type": "CHAT_MESSAGE_FIRSTBLOOD",
+            "slot": 2,
+            "key": 8,
+            "player_slot": 2
+        },
+        {
+            "time": 813,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_queenofpain",
+            "key": "npc_dota_goodguys_tower1_mid",
+            "slot": 9,
+            "player_slot": 132
+        },
+        {
+            "time": 872,
+            "type": "building_kill",
+            "unit": "npc_dota_creep_goodguys_melee",
+            "key": "npc_dota_badguys_tower1_mid"
+        },
+        {
+            "time": 1003,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_queenofpain",
+            "key": "npc_dota_goodguys_tower1_bot",
+            "slot": 9,
+            "player_slot": 132
+        },
+        {
+            "time": 1003,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_templar_assassin",
+            "key": "npc_dota_goodguys_tower1_top",
+            "slot": 7,
+            "player_slot": 130
+        },
+        {
+            "time": 1014,
+            "type": "CHAT_MESSAGE_COURIER_LOST",
+            "value": 95,
+            "killer": 128,
+            "team": 2
+        },
+        {
+            "time": 1132,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_phantom_assassin",
+            "key": "npc_dota_badguys_tower1_bot",
+            "slot": 2,
+            "player_slot": 2
+        },
+        {
+            "time": 1163,
+            "type": "CHAT_MESSAGE_COURIER_LOST",
+            "value": 90,
+            "killer": 129,
+            "team": 2
+        },
+        {
+            "time": 1328,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_magnataur",
+            "key": "npc_dota_badguys_tower1_top",
+            "slot": 0,
+            "player_slot": 0
+        },
+        {
+            "time": 1420,
+            "type": "CHAT_MESSAGE_ROSHAN_KILL",
+            "team": 3
+        },
+        {
+            "time": 1420,
+            "type": "CHAT_MESSAGE_AEGIS",
+            "slot": 7,
+            "player_slot": 130
+        },
+        {
+            "time": 1483,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_templar_assassin",
+            "key": "npc_dota_goodguys_tower2_mid",
+            "slot": 7,
+            "player_slot": 130
+        },
+        {
+            "time": 1510,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_templar_assassin",
+            "key": "npc_dota_goodguys_tower3_mid",
+            "slot": 7,
+            "player_slot": 130
+        },
+        {
+            "time": 1518,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_queenofpain",
+            "key": "npc_dota_goodguys_range_rax_mid",
+            "slot": 9,
+            "player_slot": 132
+        },
+        {
+            "time": 1536,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_lion",
+            "key": "npc_dota_goodguys_melee_rax_mid",
+            "slot": 8,
+            "player_slot": 131
+        },
+        {
+            "time": 1632,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_sand_king",
+            "key": "npc_dota_goodguys_tower2_bot",
+            "slot": 6,
+            "player_slot": 129
+        },
+        {
+            "time": 1675,
+            "type": "building_kill",
+            "unit": "npc_dota_hero_templar_assassin",
+            "key": "npc_dota_goodguys_tower3_bot",
+            "slot": 7,
+            "player_slot": 130
+        },
+        {
+            "time": 1685,
+            "type": "building_kill",
+            "unit": "dota_unknown",
+            "key": "npc_dota_goodguys_fort"
+        }
+    ],
+    "radiant_gold_adv": [
+        0,
+        40,
+        416,
+        574,
+        891,
+        826,
+        850,
+        588,
+        252,
+        132,
+        -345,
+        -788,
+        -940,
+        -419,
+        -1269,
+        953,
+        -763,
+        -3563,
+        -5697,
+        -6689,
+        -7839,
+        -9028,
+        -6608,
+        -6223,
+        -7735,
+        -11192,
+        -16894,
+        -17404,
+        -21834
+    ],
+    "radiant_xp_adv": [
+        0,
+        58,
+        -78,
+        47,
+        291,
+        229,
+        125,
+        -429,
+        -696,
+        -869,
+        -2165,
+        -2401,
+        -2864,
+        -2508,
+        -2503,
+        1680,
+        -1583,
+        -3432,
+        -7229,
+        -7324,
+        -7787,
+        -8890,
+        -4195,
+        -4199,
+        -6793,
+        -12012,
+        -19950,
+        -20984,
+        -28803
+    ],
+    "teamfights": [
+        {
+            "start": 870,
+            "end": 915,
+            "last_death": 900,
+            "deaths": 4,
+            "players": [
+                {
+                    "deaths_pos": {
+                        "104.9": {
+                            "135.8": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "magnataur_shockwave": 1,
+                        "magnataur_reverse_polarity": 1,
+                        "magnataur_skewer": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "harpoon": 1,
+                        "magic_wand": 1,
+                        "power_treads": 1,
+                        "tpscroll": 1
+                    },
+                    "killed": {
+                        "npc_dota_hero_lion": 1,
+                        "npc_dota_hero_queenofpain": 1
+                    },
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 2795,
+                    "healing": 300,
+                    "gold_delta": 780,
+                    "xp_delta": 1964,
+                    "xp_start": 9755,
+                    "xp_end": 11718
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "huskar_berserkers_blood": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "armlet": 7
+                    },
+                    "killed": {},
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 1251,
+                    "healing": 504,
+                    "gold_delta": 424,
+                    "xp_delta": 389,
+                    "xp_start": 4740,
+                    "xp_end": 5101
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "phantom_assassin_stifling_dagger": 4,
+                        "phantom_assassin_phantom_strike": 4,
+                        "plus_high_five": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "bfury": 1,
+                        "power_treads": 6,
+                        "madstone_bundle": 1
+                    },
+                    "killed": {},
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 1266,
+                    "healing": 0,
+                    "gold_delta": 495,
+                    "xp_delta": 736,
+                    "xp_start": 5938,
+                    "xp_end": 6674
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "crystal_maiden_crystal_nova": 2,
+                        "crystal_maiden_frostbite": 1,
+                        "crystal_maiden_freezing_field": 1,
+                        "plus_high_five": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "magic_wand": 1,
+                        "pavise": 1,
+                        "polliwog_charm": 1
+                    },
+                    "killed": {
+                        "npc_dota_hero_sand_king": 1
+                    },
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 708,
+                    "healing": 60,
+                    "gold_delta": 765,
+                    "xp_delta": 736,
+                    "xp_start": 4210,
+                    "xp_end": 4946
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "weaver_shukuchi": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "tpscroll": 1
+                    },
+                    "killed": {},
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 0,
+                    "healing": 0,
+                    "gold_delta": 127,
+                    "xp_delta": 122,
+                    "xp_start": 3396,
+                    "xp_end": 3490
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "silencer_global_silence": 1,
+                        "silencer_curse_of_the_silent": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "mana_draught": 1
+                    },
+                    "killed": {
+                        "npc_dota_hero_magnataur": 1
+                    },
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 54,
+                    "healing": 0,
+                    "gold_delta": 413,
+                    "xp_delta": 1890,
+                    "xp_start": 4892,
+                    "xp_end": 6781
+                },
+                {
+                    "deaths_pos": {
+                        "175.6": {
+                            "115.3": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "sandking_sand_storm": 1,
+                        "sandking_burrowstrike": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "phase_boots": 1,
+                        "famango": 1,
+                        "magic_wand": 1,
+                        "veil_of_discord": 1
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 828,
+                    "healing": 245,
+                    "gold_delta": -18,
+                    "xp_delta": 248,
+                    "xp_start": 5212,
+                    "xp_end": 5460
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "templar_assassin_psionic_trap": 2,
+                        "templar_assassin_trap": 1,
+                        "templar_assassin_refraction": 2,
+                        "templar_assassin_meld": 2
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "tango": 2,
+                        "madstone_bundle": 1
+                    },
+                    "killed": {},
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 505,
+                    "healing": 74,
+                    "gold_delta": 395,
+                    "xp_delta": 401,
+                    "xp_start": 5478,
+                    "xp_end": 5878
+                },
+                {
+                    "deaths_pos": {
+                        "108.1": {
+                            "141.4": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "lion_impale": 1,
+                        "lion_mana_drain": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "ward_observer": 1,
+                        "tpscroll": 1
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 236,
+                    "healing": 0,
+                    "gold_delta": 118,
+                    "xp_delta": 0,
+                    "xp_start": 3516,
+                    "xp_end": 3516
+                },
+                {
+                    "deaths_pos": {
+                        "108.5": {
+                            "137.6": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "queenofpain_blink": 1,
+                        "queenofpain_shadow_strike": 2,
+                        "queenofpain_scream_of_pain": 3
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "power_treads": 9,
+                        "bottle": 2,
+                        "dagon": 1
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 2885,
+                    "healing": 775,
+                    "gold_delta": -44,
+                    "xp_delta": 0,
+                    "xp_start": 10049,
+                    "xp_end": 10049
+                }
+            ]
+        },
+        {
+            "start": 1183,
+            "end": 1221,
+            "last_death": 1206,
+            "deaths": 3,
+            "players": [
+                {
+                    "deaths_pos": {
+                        "76.2": {
+                            "170.4": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "magnataur_shockwave": 2,
+                        "magnataur_skewer": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "blink": 1
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 551,
+                    "healing": 0,
+                    "gold_delta": -275,
+                    "xp_delta": 0,
+                    "xp_start": 14354,
+                    "xp_end": 14354
+                },
+                {
+                    "deaths_pos": {
+                        "77.5": {
+                            "168.9": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "huskar_life_break": 1,
+                        "huskar_inner_fire": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "armlet": 3
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 2635,
+                    "healing": 187,
+                    "gold_delta": -192,
+                    "xp_delta": 0,
+                    "xp_start": 6466,
+                    "xp_end": 6466
+                },
+                {
+                    "deaths_pos": {},
+                    "ability_uses": {
+                        "phantom_assassin_phantom_strike": 3
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "power_treads": 6,
+                        "bfury": 2,
+                        "iron_talon": 1
+                    },
+                    "killed": {},
+                    "deaths": 0,
+                    "buybacks": 0,
+                    "damage": 0,
+                    "healing": 0,
+                    "gold_delta": 454,
+                    "xp_delta": 785,
+                    "xp_start": 11479,
+                    "xp_end": 12264
+                },
+                {
+                    "deaths_pos": {
+                        "77.4": {
+                            "164.8": 1
+                        }
+                    },
+                    "ability_uses": {
+                        "crystal_maiden_crystal_nova": 1,
+                        "crystal_maiden_freezing_field": 1
+                    },
+                    "ability_targets": {},
+                    "item_uses": {
+                        "solar_crest": 1,
+                        "dust": 1,
+                        "magic_wand": 1
+                    },
+                    "killed": {},
+                    "deaths": 1,
+                    "buybacks": 0,
+                    "damage": 228,
+                    "healing": 195,
+                    "gold_delta": -111,
+                    "xp_delta": 0,
+                    "xp_start": 6650,
+                    "xp_end": 6650
+                }
+            ]
+        }
+    ]
+}

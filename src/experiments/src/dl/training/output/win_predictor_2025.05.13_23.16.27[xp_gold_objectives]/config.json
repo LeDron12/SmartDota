@@ -1,0 +1,39 @@
+{
+  "model": {
+    "input_size": 6,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.2,
+    "bidirectional": true
+  },
+  "training": {
+    "batch_size": 32,
+    "num_epochs": 3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 2,
+    "device": "cpu",
+    "validation_split": 0.1,
+    "random_seed": 42
+  },
+  "data": {
+    "max_game_length": 60,
+    "min_game_length": 10,
+    "time_window_size": 10,
+    "feature_columns": [
+      "gold_advantage",
+      "xp_advantage",
+      "radiant_towers",
+      "dire_towers",
+      "first_blood",
+      "last_roshan_killed"
+    ]
+  },
+  "logging": {
+    "log_dir": "logs",
+    "experiment_name": "win_predictor",
+    "log_every_n_steps": 100,
+    "save_every_n_epochs": 5,
+    "tensorboard": true
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "top_features": [
+    {
+      "feature": "dire_attr_int_count",
+      "importance": 0.07157338638591632
+    },
+    {
+      "feature": "radiant_attr_int_count",
+      "importance": 0.06735340953398243
+    },
+    {
+      "feature": "radiant_attr_agi_count",
+      "importance": 0.06008930468361404
+    },
+    {
+      "feature": "dire_attr_agi_count",
+      "importance": 0.059655393570397286
+    },
+    {
+      "feature": "team_synergy_advantage",
+      "importance": 0.05597669330684278
+    },
+    {
+      "feature": "radiant_role_escape_count",
+      "importance": 0.05352840840664312
+    },
+    {
+      "feature": "role_disabler_advantage",
+      "importance": 0.04507885440049981
+    },
+    {
+      "feature": "radiant_team_synergy",
+      "importance": 0.03940745644521341
+    },
+    {
+      "feature": "role_nuker_advantage",
+      "importance": 0.035865546292513505
+    },
+    {
+      "feature": "dire_role_escape_count",
+      "importance": 0.027388677621493253
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_attack_range",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_base_damage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_carry_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_support_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_nuker_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_jungler_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_durable_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_str",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_disabler_count",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "dire_attr_int_count",
+      "importance": 0.07157338638591632
+    },
+    {
+      "feature": "radiant_attr_int_count",
+      "importance": 0.06735340953398243
+    },
+    {
+      "feature": "radiant_attr_agi_count",
+      "importance": 0.06008930468361404
+    },
+    {
+      "feature": "dire_attr_agi_count",
+      "importance": 0.059655393570397286
+    },
+    {
+      "feature": "team_synergy_advantage",
+      "importance": 0.05597669330684278
+    },
+    {
+      "feature": "radiant_role_escape_count",
+      "importance": 0.05352840840664312
+    },
+    {
+      "feature": "role_disabler_advantage",
+      "importance": 0.04507885440049981
+    },
+    {
+      "feature": "radiant_team_synergy",
+      "importance": 0.03940745644521341
+    },
+    {
+      "feature": "role_nuker_advantage",
+      "importance": 0.035865546292513505
+    },
+    {
+      "feature": "dire_role_escape_count",
+      "importance": 0.027388677621493253
+    },
+    {
+      "feature": "radiant_role_pusher_count",
+      "importance": 0.027140565172787675
+    },
+    {
+      "feature": "role_carry_advantage",
+      "importance": 0.020614791045864226
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.019187151518798837
+    },
+    {
+      "feature": "dire_role_pusher_count",
+      "importance": 0.018259490208477138
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.014991931764057805
+    },
+    {
+      "feature": "radiant_role_nuker_count",
+      "importance": 0.014450178147984855
+    },
+    {
+      "feature": "radiant_role_disabler_count",
+      "importance": 0.014070559173761692
+    },
+    {
+      "feature": "radiant_attr_str_count",
+      "importance": 0.012883400229466473
+    },
+    {
+      "feature": "dire_attr_str_count",
+      "importance": 0.010630027680259401
+    },
+    {
+      "feature": "role_diversity_advantage",
+      "importance": 0.008260194868727398
+    },
+    {
+      "feature": "radiant_role_carry_count",
+      "importance": 0.0073877909641839185
+    },
+    {
+      "feature": "radiant_role_durable_count",
+      "importance": 0.007149349239522453
+    },
+    {
+      "feature": "role_support_advantage",
+      "importance": 0.005341791851972806
+    },
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.004511893049169323
+    },
+    {
+      "feature": "team_armor_advantage",
+      "importance": 0.003125045578810561
+    },
+    {
+      "feature": "dire_role_initiator_count",
+      "importance": 0.0026443454681306247
+    },
+    {
+      "feature": "attr_str_advantage",
+      "importance": 0.0013194880134375535
+    },
+    {
+      "feature": "radiant_role_support_count",
+      "importance": 0.0011784998407227212
+    },
+    {
+      "feature": "team_move_speed_advantage",
+      "importance": 0.0006732125208709726
+    },
+    {
+      "feature": "attr_int_advantage",
+      "importance": 0.0005273968983393444
+    },
+    {
+      "feature": "team_attack_range_advantage",
+      "importance": 0.00043898544385141734
+    },
+    {
+      "feature": "radiant_role_diversity",
+      "importance": 0.00021820253804104094
+    },
+    {
+      "feature": "radiant_attack_melee_count",
+      "importance": 0.00019813814949917348
+    },
+    {
+      "feature": "dire_avg_armor",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_attack_ranged_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_health",
+      "importance": 0.0
+    },
+    {
+      "feature": "team_health_advantage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_move_speed",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_attack_range",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_base_damage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_team_synergy",
+      "importance": 0.0
+    },
+    {
+      "feature": "team_base_damage_advantage",
+      "importance": 0.0
+    },
+    {
+      "feature": "attr_agi_advantage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_attack_melee_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_diversity",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_int",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_armor",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_role_jungler_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_role_initiator_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_str",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_agi",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_int",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_attack_ranged_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_health",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_move_speed",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_agi",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_attack_range",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_base_damage",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_carry_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_support_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_nuker_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_jungler_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_durable_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_str",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_role_disabler_count",
+      "importance": 0.0
+    }
+  ]
+}

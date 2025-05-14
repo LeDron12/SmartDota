@@ -1,0 +1,84 @@
+dataset:
+  type: "starz_public_matches"  # Type of dataset to load
+  path: "/Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json"
+
+transformers:
+  - name: StarzDatasetConverter
+    enabled: true
+    description: "Converts raw match data to DataFrame format"
+
+  - name: HeroFeaturesTransformer
+    enabled: false
+    heroes_path: "data/heroes.json"
+    description: "Transforms hero picks into one-hot encoded features"
+
+  - name: HeroStatsTransformer
+    enabled: true
+    # heroes_path: data/heroes.json
+    heroes_path: "data/hero_stats.json"
+    use_extra_features: false
+    description: "Calculates hero statistics features like winrates, pickrates, and banrates"
+
+  - name: PlayerStatsTransformer
+    enabled: true
+    use_diff: false
+    use_extra_features: false
+    description: "Calculates player statistics features 
+        The transformer will generate 28 features (14 stats × 2 teams):
+          Team average kills
+          Team average deaths
+          Team average assists
+          Team average last hits
+          Team average denies
+          Team average hero damage
+          Team average hero healing
+          Team average role match
+          Team average behavior
+          Team average account level
+          Team average dota plus subscribers
+          Team average smurf flags
+          Team average time since last match
+          Team average matches played
+      "
+
+  - name: PlayerHeroStatsTransformer
+    enabled: true
+    use_diff: false
+    description: "Calculates player-hero statistics features"
+
+model:
+  do_shap: true
+  use_param_grid: false
+  use_scaling: false
+  
+  # Base model parameters
+  base_params:
+    LogisticRegression:
+      max_iter: 1000
+      random_state: 42
+    
+    RandomForest:
+      n_estimators: 100
+      random_state: 42
+    
+    CatBoost:
+      iterations: 1000  # Increased for better convergence
+      learning_rate: 0.01  # Reduced for more stable learning
+      depth: 5  # Increased for more complex patterns
+      loss_function: "Logloss"
+      eval_metric: "Accuracy"  # Changed to AUC which is better for binary classification
+      random_seed: 42
+
+      # l2_leaf_reg: 5  # Increased regularization
+      # random_strength: 0.8  # Slightly reduced for more stable splits
+      # bagging_temperature: 0.8  # Reduced for more conservative bagging
+      # border_count: 254  # Increased for better feature discretization
+      # bootstrap_type: "Bernoulli"  # Added Bernoulli sampling
+      # subsample: 0.8  # Added subsampling
+      # min_data_in_leaf: 20  # Added minimum samples in leaf
+      # max_bin: 256  # Added maximum bin size
+      # grow_policy: "Lossguide"  # Added loss-guided growth
+      # max_leaves: 64  # Added maximum leaves
+      # feature_border_type: "UniformAndQuantiles"  # Added better feature discretization
+      # leaf_estimation_iterations: 10  # Added more iterations for leaf value estimation
+      # verbose: 200

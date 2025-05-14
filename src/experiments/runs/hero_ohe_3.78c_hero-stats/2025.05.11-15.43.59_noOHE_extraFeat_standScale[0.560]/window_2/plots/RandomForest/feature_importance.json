@@ -1,0 +1,92 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.1855632611111109
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.13263281349206338
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.11439395079365065
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11034823492063472
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.09796222777777767
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.012719098412698408
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.01006643571428572
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.1855632611111109
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.13263281349206338
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.11439395079365065
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11034823492063472
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.09796222777777767
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.012719098412698408
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.01006643571428572
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.1855632611111109
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.13263281349206338
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.11439395079365065
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11034823492063472
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.09796222777777767
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.012719098412698408
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.01006643571428572
+    }
+  ]
+}

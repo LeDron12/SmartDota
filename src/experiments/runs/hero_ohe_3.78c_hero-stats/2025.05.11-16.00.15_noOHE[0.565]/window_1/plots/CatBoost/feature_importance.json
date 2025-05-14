@@ -1,0 +1,92 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 45.6265501635955
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 18.62695122998461
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 14.82841238193063
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 10.733846003379567
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 10.002563393076219
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.18167682803348012
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 45.6265501635955
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 18.62695122998461
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 14.82841238193063
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 10.733846003379567
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 10.002563393076219
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.18167682803348012
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 45.6265501635955
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 18.62695122998461
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 14.82841238193063
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 10.733846003379567
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 10.002563393076219
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.18167682803348012
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ]
+}

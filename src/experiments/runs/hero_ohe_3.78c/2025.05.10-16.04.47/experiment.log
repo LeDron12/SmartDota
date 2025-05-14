@@ -1,0 +1,246 @@
+2025-05-10 16:04:47,418 - root - INFO - Starting experiment with config: configs/hero_ohe_3.78c.yaml
+2025-05-10 16:04:47,418 - root - INFO - Run directory: /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47
+2025-05-10 16:04:47,420 - src.experiments.src.utils.config - INFO - Loaded configuration from configs/hero_ohe_3.78c.yaml
+2025-05-10 16:04:47,420 - src.experiments.src.utils.config - INFO - Transformer 'DatasetConverter' is enabled
+2025-05-10 16:04:47,420 - src.experiments.src.utils.config - INFO - Transformer 'HeroFeaturesTransformer' is enabled
+2025-05-10 16:04:47,421 - src.experiments.src.core.dataset_factory - INFO - Loading dataset of type: public_matches
+2025-05-10 16:04:47,421 - src.experiments.src.core.dataset_factory - INFO - Loading public matches from: /Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/public_matches__05-04-2025_05-05-2025_7-38с_rank60+_27.5k.json
+2025-05-10 16:04:47,523 - src.experiments.src.core.dataset_factory - INFO - Removed 0 matches due to missing or empty team data.
+2025-05-10 16:04:47,544 - src.experiments.src.core.dataset_factory - INFO - Loaded 27279 matches
+2025-05-10 16:04:47,549 - src.experiments.src.core.factory - INFO - Registered transformer: DatasetConverter
+2025-05-10 16:04:47,549 - src.experiments.src.core.factory - INFO - Registered transformer: HeroFeaturesTransformer
+2025-05-10 16:04:47,549 - src.experiments.src.core.factory - INFO - Registered transformer: HeroStatsTransformer
+2025-05-10 16:04:47,549 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: DatasetConverter
+2025-05-10 16:04:47,549 - src.experiments.src.transformers.hero_features - INFO - Loading hero mapping...
+2025-05-10 16:04:47,549 - src.experiments.src.transformers.hero_features - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/heroes.json
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Loaded 126 heroes
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 1 -> Anti-Mage (seq_id: 0)
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 2 -> Axe (seq_id: 1)
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 3 -> Bane (seq_id: 2)
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 4 -> Bloodseeker (seq_id: 3)
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 5 -> Crystal Maiden (seq_id: 4)
+2025-05-10 16:04:47,551 - src.experiments.src.transformers.hero_features - INFO - Initialized 252 feature names
+2025-05-10 16:04:47,551 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: HeroFeaturesTransformer
+2025-05-10 16:04:47,551 - root - INFO - Train data shape before transformation: (25915, 4)
+2025-05-10 16:04:47,551 - root - INFO - Test data shape before transformation: (1364, 4)
+2025-05-10 16:04:47,551 - root - INFO - Train labels shape before transformation: 25915
+2025-05-10 16:04:47,551 - root - INFO - Test labels shape before transformation: 1364
+2025-05-10 16:04:47,551 - root - INFO - Processing data through transformer pipeline
+2025-05-10 16:04:47,552 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (25915, 4)
+2025-05-10 16:04:47,552 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-10 16:04:47,552 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroFeaturesTransformer
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO - Found 126 unique heroes
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO - Hero pick distribution:
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO - Most picked heroes:
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   14 (Pudge): 7573 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   86 (Rubick): 5474 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   42 (Wraith King): 5085 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   26 (Lion): 4798 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   74 (Invoker): 4764 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   68 (Ancient Apparition): 4734 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   35 (Sniper): 4678 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   7 (Earthshaker): 4548 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   21 (Windranger): 4534 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   39 (Queen of Pain): 4219 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO - Least picked heroes:
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   66 (Chen): 200 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   89 (Naga Siren): 272 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   61 (Broodmother): 278 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   82 (Meepo): 344 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   80 (Lone Druid): 361 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   92 (Visage): 361 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   77 (Lycan): 375 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   78 (Brewmaster): 408 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   57 (Omniknight): 414 picks
+2025-05-10 16:04:47,916 - src.experiments.src.transformers.hero_features - INFO -   113 (Arc Warden): 470 picks
+2025-05-10 16:04:47,917 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-10 16:04:47,917 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (25915, 4)
+2025-05-10 16:04:47,917 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-10 16:04:47,917 - src.experiments.src.transformers.dataset_converter - INFO - Converting 25915 matches to DataFrame format
+2025-05-10 16:04:47,917 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_team, dire_team, radiant_win
+2025-05-10 16:04:47,918 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-10 16:04:47,918 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-10 16:04:47,919 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-10 16:04:47,919 - src.experiments.src.core.factory - INFO - Applying transformer: HeroFeaturesTransformer
+2025-05-10 16:04:47,920 - src.experiments.src.transformers.hero_features - INFO - Processing matches into hero ID features...
+2025-05-10 16:04:50,461 - src.experiments.src.transformers.hero_features - INFO - Processed 25915 matches
+2025-05-10 16:04:50,461 - src.experiments.src.transformers.hero_features - INFO - Skipped 0 matches due to invalid data
+2025-05-10 16:04:50,461 - src.experiments.src.transformers.hero_features - INFO - Features shape: (25915, 252)
+2025-05-10 16:04:50,461 - src.experiments.src.transformers.hero_features - INFO - Feature dtype: int8
+2025-05-10 16:04:50,464 - src.experiments.src.core.factory - INFO - Result df shape: (25915, 252)
+2025-05-10 16:04:50,464 - src.experiments.src.core.factory - INFO - Added features by HeroFeaturesTransformer: Index(['radiant_0', 'radiant_1', 'radiant_2', 'radiant_3', 'radiant_4',
+       'radiant_5', 'radiant_6', 'radiant_7', 'radiant_8', 'radiant_9',
+       ...
+       'dire_116', 'dire_117', 'dire_118', 'dire_119', 'dire_120', 'dire_121',
+       'dire_122', 'dire_123', 'dire_124', 'dire_125'],
+      dtype='object', length=252)
+2025-05-10 16:04:50,507 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_0  radiant_1  radiant_2  radiant_3  radiant_4  radiant_5  radiant_6  radiant_7  radiant_8  radiant_9  radiant_10  radiant_11  radiant_12  ...  dire_113  dire_114  dire_115  dire_116  dire_117  dire_118  dire_119  dire_120  dire_121  dire_122  dire_123  dire_124  dire_125
+0          0          1          0          0          0          0          0          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+1          0          0          0          0          0          0          0          0          0          0           0           0           0  ...         0         0         1         0         0         0         0         0         0         0         0         0         0
+2          0          0          0          0          0          0          0          0          0          0           1           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         1         0
+3          0          0          0          0          0          0          0          0          0          0           0           0           0  ...         0         0         1         0         0         0         0         0         0         1         0         0         0
+4          0          0          0          0          0          0          1          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+[5 rows x 252 columns]
+2025-05-10 16:04:50,508 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_0', 'radiant_1', 'radiant_2', 'radiant_3', 'radiant_4', 'radiant_5', 'radiant_6', 'radiant_7', 'radiant_8', 'radiant_9', 'radiant_10', 'radiant_11', 'radiant_12', 'radiant_13', 'radiant_14', 'radiant_15', 'radiant_16', 'radiant_17', 'radiant_18', 'radiant_19', 'radiant_20', 'radiant_21', 'radiant_22', 'radiant_23', 'radiant_24', 'radiant_25', 'radiant_26', 'radiant_27', 'radiant_28', 'radiant_29', 'radiant_30', 'radiant_31', 'radiant_32', 'radiant_33', 'radiant_34', 'radiant_35', 'radiant_36', 'radiant_37', 'radiant_38', 'radiant_39', 'radiant_40', 'radiant_41', 'radiant_42', 'radiant_43', 'radiant_44', 'radiant_45', 'radiant_46', 'radiant_47', 'radiant_48', 'radiant_49', 'radiant_50', 'radiant_51', 'radiant_52', 'radiant_53', 'radiant_54', 'radiant_55', 'radiant_56', 'radiant_57', 'radiant_58', 'radiant_59', 'radiant_60', 'radiant_61', 'radiant_62', 'radiant_63', 'radiant_64', 'radiant_65', 'radiant_66', 'radiant_67', 'radiant_68', 'radiant_69', 'radiant_70', 'radiant_71', 'radiant_72', 'radiant_73', 'radiant_74', 'radiant_75', 'radiant_76', 'radiant_77', 'radiant_78', 'radiant_79', 'radiant_80', 'radiant_81', 'radiant_82', 'radiant_83', 'radiant_84', 'radiant_85', 'radiant_86', 'radiant_87', 'radiant_88', 'radiant_89', 'radiant_90', 'radiant_91', 'radiant_92', 'radiant_93', 'radiant_94', 'radiant_95', 'radiant_96', 'radiant_97', 'radiant_98', 'radiant_99', 'radiant_100', 'radiant_101', 'radiant_102', 'radiant_103', 'radiant_104', 'radiant_105', 'radiant_106', 'radiant_107', 'radiant_108', 'radiant_109', 'radiant_110', 'radiant_111', 'radiant_112', 'radiant_113', 'radiant_114', 'radiant_115', 'radiant_116', 'radiant_117', 'radiant_118', 'radiant_119', 'radiant_120', 'radiant_121', 'radiant_122', 'radiant_123', 'radiant_124', 'radiant_125', 'dire_0', 'dire_1', 'dire_2', 'dire_3', 'dire_4', 'dire_5', 'dire_6', 'dire_7', 'dire_8', 'dire_9', 'dire_10', 'dire_11', 'dire_12', 'dire_13', 'dire_14', 'dire_15', 'dire_16', 'dire_17', 'dire_18', 'dire_19', 'dire_20', 'dire_21', 'dire_22', 'dire_23', 'dire_24', 'dire_25', 'dire_26', 'dire_27', 'dire_28', 'dire_29', 'dire_30', 'dire_31', 'dire_32', 'dire_33', 'dire_34', 'dire_35', 'dire_36', 'dire_37', 'dire_38', 'dire_39', 'dire_40', 'dire_41', 'dire_42', 'dire_43', 'dire_44', 'dire_45', 'dire_46', 'dire_47', 'dire_48', 'dire_49', 'dire_50', 'dire_51', 'dire_52', 'dire_53', 'dire_54', 'dire_55', 'dire_56', 'dire_57', 'dire_58', 'dire_59', 'dire_60', 'dire_61', 'dire_62', 'dire_63', 'dire_64', 'dire_65', 'dire_66', 'dire_67', 'dire_68', 'dire_69', 'dire_70', 'dire_71', 'dire_72', 'dire_73', 'dire_74', 'dire_75', 'dire_76', 'dire_77', 'dire_78', 'dire_79', 'dire_80', 'dire_81', 'dire_82', 'dire_83', 'dire_84', 'dire_85', 'dire_86', 'dire_87', 'dire_88', 'dire_89', 'dire_90', 'dire_91', 'dire_92', 'dire_93', 'dire_94', 'dire_95', 'dire_96', 'dire_97', 'dire_98', 'dire_99', 'dire_100', 'dire_101', 'dire_102', 'dire_103', 'dire_104', 'dire_105', 'dire_106', 'dire_107', 'dire_108', 'dire_109', 'dire_110', 'dire_111', 'dire_112', 'dire_113', 'dire_114', 'dire_115', 'dire_116', 'dire_117', 'dire_118', 'dire_119', 'dire_120', 'dire_121', 'dire_122', 'dire_123', 'dire_124', 'dire_125']
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (1364, 4)
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-10 16:04:50,509 - src.experiments.src.transformers.dataset_converter - INFO - Converting 1364 matches to DataFrame format
+2025-05-10 16:04:50,509 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_team, dire_team, radiant_win
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-10 16:04:50,509 - src.experiments.src.core.factory - INFO - Applying transformer: HeroFeaturesTransformer
+2025-05-10 16:04:50,509 - src.experiments.src.transformers.hero_features - INFO - Processing matches into hero ID features...
+2025-05-10 16:04:50,609 - src.experiments.src.transformers.hero_features - INFO - Processed 1364 matches
+2025-05-10 16:04:50,609 - src.experiments.src.transformers.hero_features - INFO - Skipped 0 matches due to invalid data
+2025-05-10 16:04:50,609 - src.experiments.src.transformers.hero_features - INFO - Features shape: (1364, 252)
+2025-05-10 16:04:50,609 - src.experiments.src.transformers.hero_features - INFO - Feature dtype: int8
+2025-05-10 16:04:50,609 - src.experiments.src.core.factory - INFO - Result df shape: (1364, 252)
+2025-05-10 16:04:50,609 - src.experiments.src.core.factory - INFO - Added features by HeroFeaturesTransformer: Index(['radiant_0', 'radiant_1', 'radiant_2', 'radiant_3', 'radiant_4',
+       'radiant_5', 'radiant_6', 'radiant_7', 'radiant_8', 'radiant_9',
+       ...
+       'dire_116', 'dire_117', 'dire_118', 'dire_119', 'dire_120', 'dire_121',
+       'dire_122', 'dire_123', 'dire_124', 'dire_125'],
+      dtype='object', length=252)
+2025-05-10 16:04:50,651 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_0  radiant_1  radiant_2  radiant_3  radiant_4  radiant_5  radiant_6  radiant_7  radiant_8  radiant_9  radiant_10  radiant_11  radiant_12  ...  dire_113  dire_114  dire_115  dire_116  dire_117  dire_118  dire_119  dire_120  dire_121  dire_122  dire_123  dire_124  dire_125
+0          1          0          0          0          0          0          1          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+1          1          0          0          0          0          0          0          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+2          0          0          0          0          0          0          0          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+3          0          0          0          0          1          1          0          0          0          0           0           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+4          0          0          0          0          0          0          0          0          0          0           1           0           0  ...         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+[5 rows x 252 columns]
+2025-05-10 16:04:50,651 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_0', 'radiant_1', 'radiant_2', 'radiant_3', 'radiant_4', 'radiant_5', 'radiant_6', 'radiant_7', 'radiant_8', 'radiant_9', 'radiant_10', 'radiant_11', 'radiant_12', 'radiant_13', 'radiant_14', 'radiant_15', 'radiant_16', 'radiant_17', 'radiant_18', 'radiant_19', 'radiant_20', 'radiant_21', 'radiant_22', 'radiant_23', 'radiant_24', 'radiant_25', 'radiant_26', 'radiant_27', 'radiant_28', 'radiant_29', 'radiant_30', 'radiant_31', 'radiant_32', 'radiant_33', 'radiant_34', 'radiant_35', 'radiant_36', 'radiant_37', 'radiant_38', 'radiant_39', 'radiant_40', 'radiant_41', 'radiant_42', 'radiant_43', 'radiant_44', 'radiant_45', 'radiant_46', 'radiant_47', 'radiant_48', 'radiant_49', 'radiant_50', 'radiant_51', 'radiant_52', 'radiant_53', 'radiant_54', 'radiant_55', 'radiant_56', 'radiant_57', 'radiant_58', 'radiant_59', 'radiant_60', 'radiant_61', 'radiant_62', 'radiant_63', 'radiant_64', 'radiant_65', 'radiant_66', 'radiant_67', 'radiant_68', 'radiant_69', 'radiant_70', 'radiant_71', 'radiant_72', 'radiant_73', 'radiant_74', 'radiant_75', 'radiant_76', 'radiant_77', 'radiant_78', 'radiant_79', 'radiant_80', 'radiant_81', 'radiant_82', 'radiant_83', 'radiant_84', 'radiant_85', 'radiant_86', 'radiant_87', 'radiant_88', 'radiant_89', 'radiant_90', 'radiant_91', 'radiant_92', 'radiant_93', 'radiant_94', 'radiant_95', 'radiant_96', 'radiant_97', 'radiant_98', 'radiant_99', 'radiant_100', 'radiant_101', 'radiant_102', 'radiant_103', 'radiant_104', 'radiant_105', 'radiant_106', 'radiant_107', 'radiant_108', 'radiant_109', 'radiant_110', 'radiant_111', 'radiant_112', 'radiant_113', 'radiant_114', 'radiant_115', 'radiant_116', 'radiant_117', 'radiant_118', 'radiant_119', 'radiant_120', 'radiant_121', 'radiant_122', 'radiant_123', 'radiant_124', 'radiant_125', 'dire_0', 'dire_1', 'dire_2', 'dire_3', 'dire_4', 'dire_5', 'dire_6', 'dire_7', 'dire_8', 'dire_9', 'dire_10', 'dire_11', 'dire_12', 'dire_13', 'dire_14', 'dire_15', 'dire_16', 'dire_17', 'dire_18', 'dire_19', 'dire_20', 'dire_21', 'dire_22', 'dire_23', 'dire_24', 'dire_25', 'dire_26', 'dire_27', 'dire_28', 'dire_29', 'dire_30', 'dire_31', 'dire_32', 'dire_33', 'dire_34', 'dire_35', 'dire_36', 'dire_37', 'dire_38', 'dire_39', 'dire_40', 'dire_41', 'dire_42', 'dire_43', 'dire_44', 'dire_45', 'dire_46', 'dire_47', 'dire_48', 'dire_49', 'dire_50', 'dire_51', 'dire_52', 'dire_53', 'dire_54', 'dire_55', 'dire_56', 'dire_57', 'dire_58', 'dire_59', 'dire_60', 'dire_61', 'dire_62', 'dire_63', 'dire_64', 'dire_65', 'dire_66', 'dire_67', 'dire_68', 'dire_69', 'dire_70', 'dire_71', 'dire_72', 'dire_73', 'dire_74', 'dire_75', 'dire_76', 'dire_77', 'dire_78', 'dire_79', 'dire_80', 'dire_81', 'dire_82', 'dire_83', 'dire_84', 'dire_85', 'dire_86', 'dire_87', 'dire_88', 'dire_89', 'dire_90', 'dire_91', 'dire_92', 'dire_93', 'dire_94', 'dire_95', 'dire_96', 'dire_97', 'dire_98', 'dire_99', 'dire_100', 'dire_101', 'dire_102', 'dire_103', 'dire_104', 'dire_105', 'dire_106', 'dire_107', 'dire_108', 'dire_109', 'dire_110', 'dire_111', 'dire_112', 'dire_113', 'dire_114', 'dire_115', 'dire_116', 'dire_117', 'dire_118', 'dire_119', 'dire_120', 'dire_121', 'dire_122', 'dire_123', 'dire_124', 'dire_125']
+2025-05-10 16:04:50,651 - root - INFO - Train data shape after transformation: (25915, 252)
+2025-05-10 16:04:50,651 - root - INFO - Test data shape after transformation: (1364, 252)
+2025-05-10 16:04:50,651 - root - INFO - Train labels shape after transformation: 25915
+2025-05-10 16:04:50,651 - root - INFO - Test labels shape after transformation: 1364
+2025-05-10 16:04:50,651 - root - INFO - Splitting data into train and test sets...
+2025-05-10 16:04:50,653 - root - INFO - 
+Data split statistics:
+2025-05-10 16:04:50,653 - root - INFO - Training set: 25915 matches
+2025-05-10 16:04:50,653 - root - INFO - Test set: 1364 matches
+2025-05-10 16:04:50,653 - root - INFO - Training set win rate: 54.04%
+2025-05-10 16:04:50,653 - root - INFO - Test set win rate: 53.37%
+2025-05-10 16:04:50,653 - root - INFO - Saving transformed data...
+2025-05-10 16:04:50,782 - root - INFO - Saved transformed data to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/transformed_data.xlsx
+2025-05-10 16:04:50,782 - root - INFO - Training set shape: (25915, 253)
+2025-05-10 16:04:50,782 - root - INFO - Test set shape: (1364, 253)
+2025-05-10 16:04:50,782 - root - INFO - 
+Feature Statistics:
+2025-05-10 16:04:50,782 - root - INFO - Total features: 256
+2025-05-10 16:04:50,782 - root - INFO - 
+=== Model Training and Evaluation ===
+2025-05-10 16:04:50,782 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-10 16:04:50,782 - src.experiments.src.core.model_trainer - INFO - Using SHAP: False
+2025-05-10 16:04:50,783 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-10 16:04:50,783 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5652
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - f1: 0.6334
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - precision: 0.5682
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - recall: 0.7157
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5579
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6866
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2467
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5652)
+2025-05-10 16:04:50,870 - src.experiments.src.core.model_trainer - INFO - 
+Training RandomForest...
+2025-05-10 16:05:07,501 - src.experiments.src.core.model_trainer - INFO - 
+RandomForest metrics:
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5393
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - f1: 0.6091
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - precision: 0.5404
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - recall: 0.6978
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5220
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6907
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2488
+2025-05-10 16:05:07,502 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-10 16:05:08,036 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5547
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - f1: 0.6902
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - precision: 0.5414
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - recall: 0.9519
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5440
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6907
+2025-05-10 16:05:08,037 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2488
+2025-05-10 16:05:08,039 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/models/model_comparison.csv
+2025-05-10 16:05:08,040 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/models/model_comparison.json
+2025-05-10 16:05:08,040 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-10 16:05:08,042 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.565226  0.633435   0.568157  0.715659  0.557918  0.686615     0.246650
+RandomForest        0.539339  0.609113   0.540426  0.697802  0.521994  0.690673     0.248755
+CatBoost            0.554695  0.690239   0.541406  0.951923  0.543988  0.690683     0.248769
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.333
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.697
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Precision: 0.537
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Recall: 0.996
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.539
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.465
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.668
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Precision: 0.555
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Recall: 0.839
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.556
+2025-05-10 16:05:08,553 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - 
+RandomForest optimal threshold analysis:
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.343
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.696
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Precision: 0.535
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Recall: 0.999
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.535
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.444
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.680
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Precision: 0.544
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Recall: 0.907
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.545
+2025-05-10 16:05:09,224 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.696
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Precision: 0.534
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.534
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.505
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.677
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Precision: 0.539
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Recall: 0.909
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.536
+2025-05-10 16:05:09,622 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-10 16:05:09,623 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/models/checkpoints/_logisticregression.joblib
+2025-05-10 16:05:09,830 - src.experiments.src.core.model_trainer - INFO - Saved RandomForest model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/models/checkpoints/_randomforest.joblib
+2025-05-10 16:05:09,852 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.10-16.04.47/models/checkpoints/_catboost.cbm
+2025-05-10 16:05:09,858 - src.experiments.src.core.model_trainer - INFO - Saved best model (LogisticRegression) to production at /Users/ankamenskiy/SmartDota/models/sklearn/.joblib
+2025-05-10 16:05:09,858 - root - INFO - Experiment completed successfully

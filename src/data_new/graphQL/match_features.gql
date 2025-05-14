@@ -1,0 +1,77 @@
+query GetMatchFeatures {
+    match(id: 8242099319) {
+        id
+        didRadiantWin
+        startDateTime
+        endDateTime
+        durationSeconds
+        
+        # Team-level features
+        radiantNetworthLeads
+        radiantExperienceLeads
+        radiantKills
+        direKills
+        
+        # Objective tracking
+        towerDeaths {
+            time
+            isRadiant
+            npcId  # Find enum to match!!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
+        
+        # First blood tracking
+        firstBloodTime
+        
+        # Player-level data for aggregation
+        players {
+            playerSlot
+            isRadiant
+            heroId
+            position
+            role
+          	roleBasic
+          	
+          	stats {
+              level
+              killEvents {
+                time
+              }
+              deathEvents {
+                time
+                isDieBack
+              }
+              assistEvents {
+                time
+              }
+              lastHitsPerMinute
+              goldPerMinute
+              experiencePerMinute
+              healPerMinute
+              heroDamagePerMinute
+              towerDamagePerMinute
+              actionsPerMinute
+              networthPerMinute
+              campStack
+              deniesPerMinute
+              impPerMinute
+              tripsFountainPerMinute
+              heroDamageReceivedPerMinute
+            }
+          playbackData {
+						buyBackEvents{
+              time
+							heroId
+            }
+            runeEvents{
+              time
+              rune
+              action
+            }
+          }
+        }
+        
+        # Additional match metadata
+        gameMode
+        lobbyType
+    }
+}

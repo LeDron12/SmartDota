@@ -1,0 +1,60 @@
+dataset:
+  path: /Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json
+  type: starz_public_matches
+model:
+  base_params:
+    CatBoost:
+      depth: 5
+      eval_metric: Accuracy
+      iterations: 1000
+      learning_rate: 0.01
+      loss_function: Logloss
+      random_seed: 42
+    LogisticRegression:
+      max_iter: 1000
+      random_state: 42
+    RandomForest:
+      n_estimators: 100
+      random_state: 42
+  do_shap: true
+  use_param_grid: false
+  use_scaling: false
+transformers:
+- description: Converts raw match data to DataFrame format
+  enabled: true
+  name: StarzDatasetConverter
+- description: Transforms hero picks into one-hot encoded features
+  enabled: false
+  heroes_path: data/heroes.json
+  name: HeroFeaturesTransformer
+- description: Calculates hero statistics features like winrates, pickrates, and banrates
+  enabled: true
+  heroes_path: data/hero_stats.json
+  name: HeroStatsTransformer
+  use_extra_features: false
+- description: "Calculates player statistics features The transformer will generate\
+    \ 28 features (14 stats \xD7 2 teams): Team average kills Team average deaths\
+    \ Team average assists Team average last hits Team average denies Team average\
+    \ hero damage Team average hero healing Team average role match Team average behavior\
+    \ Team average account level Team average dota plus subscribers Team average smurf\
+    \ flags Team average time since last match Team average matches played "
+  enabled: true
+  name: PlayerStatsTransformer
+  use_diff: false
+  use_extra_features: false
+- description: Calculates player-hero statistics features
+  enabled: true
+  name: PlayerHeroStatsTransformer
+  use_diff: false
+- add_diff: false
+  description: 'Calculates player ratings features: estimated ELO and Glicko ratings'
+  enabled: true
+  name: PlayerRatingsTransformer
+  rating_params:
+    elo_k: 32
+    glicko_rd: 350
+    glicko_tau: 0.5
+    glicko_vol: 0.06
+    rating_decay: 0.95
+  use_elo: true
+  use_glicko: true

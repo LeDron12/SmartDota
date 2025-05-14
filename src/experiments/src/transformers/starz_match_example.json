@@ -1,0 +1,242 @@
+[
+    {
+        "id": 8242057914,
+        "didRadiantWin": false,
+        "startDateTime": 1743800411,
+        "endDateTime": 1743802995,
+        "actualRank": 62,
+        "rank": 62,
+        "players": [
+          {
+            "playerSlot": 0,
+            "isRadiant": true,
+            "heroId": 103,
+            "kills": 6,
+            "deaths": 12,
+            "assists": 12,
+            "numLastHits": 95,
+            "numDenies": 2,
+            "heroDamage": 19621,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 88805322,
+              "isDotaPlusSubscriber": true,
+              "dotaAccountLevel": 160,
+              "smurfFlag": 0
+            },
+            "lane": "OFF_LANE",
+            "position": "POSITION_4",
+            "role": "LIGHT_SUPPORT",
+            "roleBasic": "LIGHT_SUPPORT",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 1,
+            "isRadiant": true,
+            "heroId": 104,
+            "kills": 7,
+            "deaths": 9,
+            "assists": 13,
+            "numLastHits": 300,
+            "numDenies": 2,
+            "heroDamage": 30437,
+            "heroHealing": 1130,
+            "steamAccount": {
+              "id": 157765557,
+              "isDotaPlusSubscriber": true,
+              "dotaAccountLevel": 48,
+              "smurfFlag": 0
+            },
+            "lane": "MID_LANE",
+            "position": "POSITION_2",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 2,
+            "isRadiant": true,
+            "heroId": 2,
+            "kills": 12,
+            "deaths": 11,
+            "assists": 18,
+            "numLastHits": 182,
+            "numDenies": 17,
+            "heroDamage": 42234,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 55938079,
+              "isDotaPlusSubscriber": false,
+              "dotaAccountLevel": 77,
+              "smurfFlag": 0
+            },
+            "lane": "OFF_LANE",
+            "position": "POSITION_3",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 3,
+            "isRadiant": true,
+            "heroId": 57,
+            "kills": 8,
+            "deaths": 13,
+            "assists": 5,
+            "numLastHits": 265,
+            "numDenies": 20,
+            "heroDamage": 21794,
+            "heroHealing": 1247,
+            "steamAccount": {
+              "id": 93565827,
+              "isDotaPlusSubscriber": true,
+              "dotaAccountLevel": 108,
+              "smurfFlag": 0
+            },
+            "lane": "SAFE_LANE",
+            "position": "POSITION_1",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 4,
+            "isRadiant": true,
+            "heroId": 68,
+            "kills": 5,
+            "deaths": 15,
+            "assists": 19,
+            "numLastHits": 58,
+            "numDenies": 3,
+            "heroDamage": 18938,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 154644951,
+              "isDotaPlusSubscriber": false,
+              "dotaAccountLevel": 43,
+              "smurfFlag": 0
+            },
+            "lane": "SAFE_LANE",
+            "position": "POSITION_5",
+            "role": "HARD_SUPPORT",
+            "roleBasic": "LIGHT_SUPPORT",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 128,
+            "isRadiant": false,
+            "heroId": 15,
+            "kills": 9,
+            "deaths": 8,
+            "assists": 21,
+            "numLastHits": 273,
+            "numDenies": 9,
+            "heroDamage": 30614,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 229166675,
+              "isDotaPlusSubscriber": true,
+              "dotaAccountLevel": 49,
+              "smurfFlag": 0
+            },
+            "lane": "OFF_LANE",
+            "position": "POSITION_3",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 129,
+            "isRadiant": false,
+            "heroId": 37,
+            "kills": 7,
+            "deaths": 7,
+            "assists": 25,
+            "numLastHits": 99,
+            "numDenies": 2,
+            "heroDamage": 45240,
+            "heroHealing": 9272,
+            "steamAccount": {
+              "id": 182861782,
+              "isDotaPlusSubscriber": false,
+              "dotaAccountLevel": 78,
+              "smurfFlag": 0
+            },
+            "lane": "SAFE_LANE",
+            "position": "POSITION_5",
+            "role": "HARD_SUPPORT",
+            "roleBasic": "LIGHT_SUPPORT",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 130,
+            "isRadiant": false,
+            "heroId": 109,
+            "kills": 8,
+            "deaths": 12,
+            "assists": 19,
+            "numLastHits": 128,
+            "numDenies": 6,
+            "heroDamage": 16214,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 44865849,
+              "isDotaPlusSubscriber": false,
+              "dotaAccountLevel": 137,
+              "smurfFlag": 0
+            },
+            "lane": "OFF_LANE",
+            "position": "POSITION_4",
+            "role": "LIGHT_SUPPORT",
+            "roleBasic": "LIGHT_SUPPORT",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 131,
+            "isRadiant": false,
+            "heroId": 54,
+            "kills": 5,
+            "deaths": 6,
+            "assists": 17,
+            "numLastHits": 373,
+            "numDenies": 16,
+            "heroDamage": 26199,
+            "heroHealing": 2311,
+            "steamAccount": {
+              "id": 160182165,
+              "isDotaPlusSubscriber": true,
+              "dotaAccountLevel": 71,
+              "smurfFlag": 0
+            },
+            "lane": "SAFE_LANE",
+            "position": "POSITION_1",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          },
+          {
+            "playerSlot": 132,
+            "isRadiant": false,
+            "heroId": 39,
+            "kills": 28,
+            "deaths": 6,
+            "assists": 16,
+            "numLastHits": 286,
+            "numDenies": 18,
+            "heroDamage": 63021,
+            "heroHealing": 0,
+            "steamAccount": {
+              "id": 185893818,
+              "isDotaPlusSubscriber": null,
+              "dotaAccountLevel": 65,
+              "smurfFlag": 0
+            },
+            "lane": "MID_LANE",
+            "position": "POSITION_2",
+            "role": "CORE",
+            "roleBasic": "CORE",
+            "behavior": 0
+          }
+        ]
+    }
+]

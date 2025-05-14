@@ -1,0 +1,137 @@
+{
+  "best_metrics": {
+    "epoch": 2,
+    "train": {
+      "loss": 0.3407657638192177,
+      "accuracy": 0.8310049048095027,
+      "auc": 0.9238351939095935,
+      "precision": 0.8340124430424115,
+      "recall": 0.8453834880312653,
+      "f1": 0.8396594693544475,
+      "window_metrics": [
+        {
+          "accuracy": 0.7311326302583605,
+          "auc": 0.8303619948133669
+        },
+        {
+          "accuracy": 0.8367161585847418,
+          "auc": 0.9269962963819702
+        },
+        {
+          "accuracy": 0.9071601941747572,
+          "auc": 0.9710148089902366
+        },
+        {
+          "accuracy": 0.9024064171122995,
+          "auc": 0.9624566194314012
+        },
+        {
+          "accuracy": 0.8652396744045825,
+          "auc": 0.9162739486457231
+        },
+        {
+          "accuracy": 0.7816711590296496,
+          "auc": 0.8742763157894737
+        }
+      ]
+    },
+    "val": {
+      "loss": 0.3632069528102875,
+      "accuracy": 0.8051181102362205,
+      "auc": 0.9115214048795584,
+      "precision": 0.7797253342970727,
+      "recall": 0.8669881454691581,
+      "f1": 0.8210446199219865,
+      "window_metrics": [
+        {
+          "accuracy": 0.7151943462897526,
+          "auc": 0.8268550159872102
+        },
+        {
+          "accuracy": 0.7934821112291888,
+          "auc": 0.9015802000482045
+        },
+        {
+          "accuracy": 0.885514977431268,
+          "auc": 0.964765954574601
+        },
+        {
+          "accuracy": 0.8753541076487252,
+          "auc": 0.9611046909775722
+        },
+        {
+          "accuracy": 0.832,
+          "auc": 0.9127797172780862
+        },
+        {
+          "accuracy": 0.859375,
+          "auc": 0.7521135265700483
+        }
+      ]
+    },
+    "window_metrics": [
+      {
+        "accuracy": 0.7151943462897526,
+        "auc": 0.8268550159872102
+      },
+      {
+        "accuracy": 0.7934821112291888,
+        "auc": 0.9015802000482045
+      },
+      {
+        "accuracy": 0.885514977431268,
+        "auc": 0.964765954574601
+      },
+      {
+        "accuracy": 0.8753541076487252,
+        "auc": 0.9611046909775722
+      },
+      {
+        "accuracy": 0.832,
+        "auc": 0.9127797172780862
+      },
+      {
+        "accuracy": 0.859375,
+        "auc": 0.7521135265700483
+      }
+    ]
+  },
+  "final_epoch": 2,
+  "early_stopped": false,
+  "best_val_auc": 0.9150238906456329,
+  "config": {
+    "model": {
+      "input_size": 2,
+      "hidden_size": 64,
+      "num_layers": 1,
+      "dropout": 0.2,
+      "bidirectional": true
+    },
+    "training": {
+      "batch_size": 32,
+      "num_epochs": 3,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "early_stopping_patience": 2,
+      "device": "cpu",
+      "validation_split": 0.1,
+      "random_seed": 42
+    },
+    "data": {
+      "max_game_length": 60,
+      "min_game_length": 10,
+      "time_window_size": 10,
+      "feature_columns": [
+        "gold_advantage",
+        "xp_advantage"
+      ]
+    },
+    "logging": {
+      "log_dir": "logs",
+      "experiment_name": "win_predictor",
+      "log_every_n_steps": 100,
+      "save_every_n_epochs": 5,
+      "tensorboard": true
+    }
+  }
+}

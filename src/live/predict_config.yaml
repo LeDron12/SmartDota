@@ -1,0 +1,11 @@
+# Path to the trained model
+model_path: "..//experiments/runs/hero_ohe_3.78c_hero-stats_player-stats/2025.05.14-14.44.21/window_1/checkpoints/window_1_catboost.cbm"
+
+# Path to the pipeline directory (relative to project root)
+pipeline_dir: "..//experiments/runs/hero_ohe_3.78c_hero-stats_player-stats/2025.05.14-14.44.21/pipeline"
+
+# # Default match ID to use if none provided via command line
+# match_id: 8289800118
+
+# # Model prediction threshold (optional)
+# model_threshold: 0.5

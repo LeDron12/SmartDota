@@ -1,0 +1,61 @@
+dataset:
+  type: "public_matches"  # Type of dataset to load
+  path: "cache/public_110000_7-34b-ALL"  # Path relative to project root
+  params:
+    min_match_id: 0
+    max_match_id: 0
+
+transformers:
+  - name: DatasetConverter
+    enabled: true
+    description: "Converts raw match data to DataFrame format"
+
+  - name: HeroFeaturesTransformer
+    enabled: true
+    heroes_path: data/heroes.json
+    description: "Transforms hero picks into one-hot encoded features"
+
+model:
+  use_param_grid: false  # Enable/disable parameter grid search
+  
+  # Base model parameters
+  base_params:
+    LogisticRegression:
+      max_iter: 1000
+      random_state: 42
+    
+    RandomForest:
+      n_estimators: 100
+      random_state: 42
+    
+    CatBoost:
+      iterations: 1000
+      learning_rate: 0.05
+      depth: 6
+      loss_function: "Logloss"
+      eval_metric: "F1"
+      random_seed: 42
+      verbose: 200
+  
+  # Parameter search grids
+  param_grids:
+    LogisticRegression:
+      C: [0.1, 1.0, 10.0]
+      penalty: ["l1", "l2"]
+      solver: ["liblinear"]
+      max_iter: [1000]
+    
+    RandomForest:
+      n_estimators: [300, 600]
+      max_depth: [16]
+      min_samples_split: [2, 5]
+      min_samples_leaf: [1, 2]
+    
+    CatBoost:
+      iterations: [1000]
+      learning_rate: [0.02]
+      depth: [4, 5, 6]
+      l2_leaf_reg: [1, 3, 5]
+      border_count: [32, 64, 128]
+      bagging_temperature: [0.5, 1.0]
+      random_strength: [1, 5]

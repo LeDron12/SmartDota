@@ -1,0 +1,141 @@
+{
+  "best_metrics": {
+    "epoch": 2,
+    "train": {
+      "loss": 0.33593720514327285,
+      "accuracy": 0.8313884562635114,
+      "auc": 0.9261258788149733,
+      "precision": 0.8341323526192509,
+      "recall": 0.8461162677088422,
+      "f1": 0.8400815741608334,
+      "window_metrics": [
+        {
+          "accuracy": 0.7323871878307916,
+          "auc": 0.8350306426826495
+        },
+        {
+          "accuracy": 0.8392434054651714,
+          "auc": 0.9324496176033139
+        },
+        {
+          "accuracy": 0.9053398058252428,
+          "auc": 0.9704362492628268
+        },
+        {
+          "accuracy": 0.8983957219251337,
+          "auc": 0.9615721950763704
+        },
+        {
+          "accuracy": 0.8589086523967441,
+          "auc": 0.9129479095131121
+        },
+        {
+          "accuracy": 0.8301886792452831,
+          "auc": 0.8981798245614036
+        }
+      ]
+    },
+    "val": {
+      "loss": 0.35106277300251854,
+      "accuracy": 0.824906755076668,
+      "auc": 0.9192027712504257,
+      "precision": 0.815027793751198,
+      "recall": 0.8543299176210568,
+      "f1": 0.8342162056111438,
+      "window_metrics": [
+        {
+          "accuracy": 0.7406360424028269,
+          "auc": 0.8369164668265388
+        },
+        {
+          "accuracy": 0.8161530286928799,
+          "auc": 0.9164778661524866
+        },
+        {
+          "accuracy": 0.908494050061551,
+          "auc": 0.9726124666734163
+        },
+        {
+          "accuracy": 0.874409820585458,
+          "auc": 0.9583476002967529
+        },
+        {
+          "accuracy": 0.8266666666666667,
+          "auc": 0.9065415212041436
+        },
+        {
+          "accuracy": 0.875,
+          "auc": 0.8013285024154589
+        }
+      ]
+    },
+    "window_metrics": [
+      {
+        "accuracy": 0.7406360424028269,
+        "auc": 0.8369164668265388
+      },
+      {
+        "accuracy": 0.8161530286928799,
+        "auc": 0.9164778661524866
+      },
+      {
+        "accuracy": 0.908494050061551,
+        "auc": 0.9726124666734163
+      },
+      {
+        "accuracy": 0.874409820585458,
+        "auc": 0.9583476002967529
+      },
+      {
+        "accuracy": 0.8266666666666667,
+        "auc": 0.9065415212041436
+      },
+      {
+        "accuracy": 0.875,
+        "auc": 0.8013285024154589
+      }
+    ]
+  },
+  "final_epoch": 2,
+  "early_stopped": false,
+  "best_val_auc": 0.9192027712504257,
+  "config": {
+    "model": {
+      "input_size": 6,
+      "hidden_size": 64,
+      "num_layers": 1,
+      "dropout": 0.2,
+      "bidirectional": true
+    },
+    "training": {
+      "batch_size": 32,
+      "num_epochs": 3,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "early_stopping_patience": 2,
+      "device": "cpu",
+      "validation_split": 0.1,
+      "random_seed": 42
+    },
+    "data": {
+      "max_game_length": 60,
+      "min_game_length": 10,
+      "time_window_size": 10,
+      "feature_columns": [
+        "gold_advantage",
+        "xp_advantage",
+        "radiant_towers",
+        "dire_towers",
+        "first_blood",
+        "last_roshan_killed"
+      ]
+    },
+    "logging": {
+      "log_dir": "logs",
+      "experiment_name": "win_predictor",
+      "log_every_n_steps": 100,
+      "save_every_n_epochs": 5,
+      "tensorboard": true
+    }
+  }
+}

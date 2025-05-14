@@ -1,0 +1,45 @@
+{
+  "dataset": {
+    "type": "starz_public_matches",
+    "path": "/Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json"
+  },
+  "transformers": [
+    {
+      "name": "DatasetConverter",
+      "enabled": true,
+      "description": "Converts raw match data to DataFrame format"
+    },
+    {
+      "name": "HeroFeaturesTransformer",
+      "enabled": false,
+      "heroes_path": "data/heroes.json",
+      "description": "Transforms hero picks into one-hot encoded features"
+    },
+    {
+      "name": "HeroStatsTransformer",
+      "enabled": true,
+      "heroes_path": "data/hero_stats.json",
+      "use_extra_features": true,
+      "description": "Calculates hero statistics features like winrates, pickrates, and banrates"
+    }
+  ],
+  "model": {
+    "do_shap": true,
+    "use_param_grid": false,
+    "use_scaling": true,
+    "base_params": {
+      "LogisticRegression": {
+        "max_iter": 1000,
+        "random_state": 42
+      },
+      "CatBoost": {
+        "iterations": 2000,
+        "learning_rate": 0.02,
+        "depth": 5,
+        "loss_function": "Logloss",
+        "eval_metric": "Accuracy",
+        "random_seed": 42
+      }
+    }
+  }
+}

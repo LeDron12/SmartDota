@@ -1,0 +1,37 @@
+dataset:
+  path: /Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json
+  type: starz_public_matches
+model:
+  base_params:
+    CatBoost:
+      depth: 5
+      eval_metric: Accuracy
+      iterations: 2000
+      learning_rate: 0.02
+      loss_function: Logloss
+      random_seed: 42
+    LogisticRegression:
+      C: 1.0
+      max_iter: 1000
+      penalty: l2
+      random_state: 42
+      solver: liblinear
+    RandomForest:
+      n_estimators: 400
+      random_state: 42
+  do_shap: true
+  use_param_grid: false
+  use_scaling: false
+transformers:
+- description: Converts raw match data to DataFrame format
+  enabled: true
+  name: DatasetConverter
+- description: Transforms hero picks into one-hot encoded features
+  enabled: false
+  heroes_path: data/heroes.json
+  name: HeroFeaturesTransformer
+- description: Calculates hero statistics features like winrates, pickrates, and banrates
+  enabled: true
+  heroes_path: data/hero_stats.json
+  name: HeroStatsTransformer
+  use_extra_features: false

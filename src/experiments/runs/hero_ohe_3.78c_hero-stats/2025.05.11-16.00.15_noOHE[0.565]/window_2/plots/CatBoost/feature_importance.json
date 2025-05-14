@@ -1,0 +1,92 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.4740975023574
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.909548008378327
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.76364641091499
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.852708078349286
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.4740975023574
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.909548008378327
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.76364641091499
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.852708078349286
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 36.4740975023574
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 28.909548008378327
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 21.76364641091499
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 12.852708078349286
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    }
+  ]
+}

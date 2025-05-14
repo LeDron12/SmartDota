@@ -1,0 +1,33 @@
+query GetMatchById {
+    match(id: $matchId){
+        id
+        didRadiantWin
+        startDateTime
+        endDateTime   
+        actualRank
+        rank
+        players {
+            playerSlot
+            isRadiant
+            heroId
+            kills
+            deaths
+            assists
+            numLastHits
+            numDenies
+            heroDamage
+            heroHealing
+            steamAccount {
+                id
+                isDotaPlusSubscriber
+                dotaAccountLevel
+                smurfFlag
+            }
+            lane
+            position
+            role
+            roleBasic
+            behavior
+        }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "transformers": [
+    {
+      "name": "DatasetConverter",
+      "module": "src.experiments.src.transformers.dataset_converter",
+      "class": "DatasetConverter",
+      "path": "DatasetConverter.pkl"
+    },
+    {
+      "name": "HeroStatsTransformer",
+      "module": "src.experiments.src.transformers.hero_stats_transformer",
+      "class": "HeroStatsTransformer",
+      "path": "HeroStatsTransformer.pkl"
+    }
+  ]
+}

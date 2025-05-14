@@ -1,0 +1,1347 @@
+2025-05-11 15:09:04,988 - root - INFO - Starting time-based CV experiment with config: configs/hero_ohe_3.78c_hero-stats.yaml
+2025-05-11 15:09:04,988 - root - INFO - Number of windows: 6, Window size: 2 hours
+2025-05-11 15:09:04,990 - src.experiments.src.utils.config - INFO - Loaded configuration from configs/hero_ohe_3.78c_hero-stats.yaml
+2025-05-11 15:09:04,990 - src.experiments.src.utils.config - INFO - Transformer 'DatasetConverter' is enabled
+2025-05-11 15:09:04,990 - src.experiments.src.utils.config - INFO - Transformer 'HeroFeaturesTransformer' is disabled
+2025-05-11 15:09:04,990 - src.experiments.src.utils.config - INFO - Transformer 'HeroStatsTransformer' is enabled
+2025-05-11 15:09:04,991 - src.experiments.src.core.dataset_factory - INFO - Loading dataset of type: starz_public_matches
+2025-05-11 15:09:04,991 - src.experiments.src.core.dataset_factory - INFO - Loading starz public matches from: /Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json
+2025-05-11 15:09:06,146 - src.experiments.src.core.dataset_factory - INFO - Removed 103 matches due to missing or empty data.
+2025-05-11 15:09:17,301 - src.experiments.src.core.dataset_factory - INFO - Loaded 27176 matches
+2025-05-11 15:09:17,301 - src.experiments.src.core.dataset_factory - INFO - No role count: {'matches': 1371, 'players': 13710}
+2025-05-11 15:09:17,472 - __main__ - INFO - 
+Window 1/6:
+2025-05-11 15:09:17,473 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 18:55:49
+2025-05-11 15:09:17,473 - __main__ - INFO - Validation period: 2025-05-04 19:00:05 to 2025-05-04 20:58:49
+2025-05-11 15:09:17,473 - __main__ - INFO - Train size: 27072, Validation size: 104
+2025-05-11 15:09:17,592 - __main__ - INFO - 
+Window 2/6:
+2025-05-11 15:09:17,592 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 16:57:29
+2025-05-11 15:09:17,592 - __main__ - INFO - Validation period: 2025-05-04 16:59:59 to 2025-05-04 18:55:49
+2025-05-11 15:09:17,592 - __main__ - INFO - Train size: 26972, Validation size: 100
+2025-05-11 15:09:17,712 - __main__ - INFO - 
+Window 3/6:
+2025-05-11 15:09:17,713 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 14:58:44
+2025-05-11 15:09:17,713 - __main__ - INFO - Validation period: 2025-05-04 14:58:55 to 2025-05-04 16:57:29
+2025-05-11 15:09:17,713 - __main__ - INFO - Train size: 26829, Validation size: 143
+2025-05-11 15:09:17,834 - __main__ - INFO - 
+Window 4/6:
+2025-05-11 15:09:17,834 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 12:58:24
+2025-05-11 15:09:17,834 - __main__ - INFO - Validation period: 2025-05-04 12:59:30 to 2025-05-04 14:58:44
+2025-05-11 15:09:17,834 - __main__ - INFO - Train size: 26674, Validation size: 155
+2025-05-11 15:09:17,953 - __main__ - INFO - 
+Window 5/6:
+2025-05-11 15:09:17,953 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 10:58:34
+2025-05-11 15:09:17,954 - __main__ - INFO - Validation period: 2025-05-04 10:58:55 to 2025-05-04 12:58:24
+2025-05-11 15:09:17,954 - __main__ - INFO - Train size: 26557, Validation size: 117
+2025-05-11 15:09:18,078 - __main__ - INFO - 
+Window 6/6:
+2025-05-11 15:09:18,078 - __main__ - INFO - Train period: 2025-04-04 21:00:11 to 2025-05-04 08:58:34
+2025-05-11 15:09:18,078 - __main__ - INFO - Validation period: 2025-05-04 09:01:45 to 2025-05-04 10:58:34
+2025-05-11 15:09:18,078 - __main__ - INFO - Train size: 26464, Validation size: 93
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: DatasetConverter
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: StarzDatasetConverter
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: HeroFeaturesTransformer
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: HeroStatsTransformer
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: PlayerStatsTransformer
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Registered transformer: PlayerHeroStatsTransformer
+2025-05-11 15:09:18,080 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: DatasetConverter
+2025-05-11 15:09:18,080 - src.experiments.src.transformers.hero_features - INFO - Loading hero mapping...
+2025-05-11 15:09:18,080 - src.experiments.src.transformers.hero_features - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/heroes.json
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Loaded 126 heroes
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 1 -> Anti-Mage (seq_id: 0)
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 2 -> Axe (seq_id: 1)
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 3 -> Bane (seq_id: 2)
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 4 -> Bloodseeker (seq_id: 3)
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 5 -> Crystal Maiden (seq_id: 4)
+2025-05-11 15:09:18,081 - src.experiments.src.transformers.hero_features - INFO - Initialized 252 feature names
+2025-05-11 15:09:18,081 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: HeroStatsTransformer
+2025-05-11 15:09:18,081 - root - INFO - 
+Processing window 1/6
+2025-05-11 15:09:18,082 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (27072, 19)
+2025-05-11 15:09:18,082 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:09:18,088 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:09:18,091 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:18,093 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:18,093 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:09:18,093 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:09:18,917 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:09:18,922 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:09:18,922 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (27072, 19)
+2025-05-11 15:09:18,922 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:09:18,926 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:09:18,928 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:09:18,928 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:09:18,930 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:09:18,930 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:09:18,933 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:09:18,933 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:09:19,299 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:09:19,967 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:09:20,326 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:09:20,695 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:09:29,189 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:09:29,189 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:09:29,195 - src.experiments.src.core.factory - INFO - Result df shape: (27072, 69)
+2025-05-11 15:09:29,195 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:09:29,212 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.511453               0.515670                  0.500200               0.531546                      0.499215  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493711               0.504852                  0.505776               0.504720                      0.503574  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.482454               0.493277                  0.465066               0.497027                      0.496661  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511432               0.507871                  0.537615               0.492102                      0.522489  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.503572               0.496680                  0.508170               0.489124                      0.500877  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:09:29,219 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:09:29,220 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (104, 19)
+2025-05-11 15:09:29,220 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:09:29,220 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:09:29,221 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:09:29,221 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:09:29,221 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:09:29,221 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:09:29,221 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:09:29,221 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:09:29,223 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:09:29,227 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:09:29,229 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:09:29,231 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:09:29,273 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:09:29,273 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:09:29,347 - src.experiments.src.core.factory - INFO - Result df shape: (104, 69)
+2025-05-11 15:09:29,348 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:09:29,363 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+27072                  0.500022               0.475549                  0.503436               0.447461                      0.513007  ...                       -7.0                         -5.0                        -0.8                         3                     0.1
+27073                  0.512237               0.505961                  0.505886               0.479232                      0.500098  ...                      -17.0                        -35.0                         0.4                         0                    -0.6
+27074                  0.500402               0.498771                  0.493144               0.492646                      0.487277  ...                       11.0                        -25.0                        -6.2                         0                     0.4
+27075                  0.489690               0.495418                  0.460000               0.482763                      0.486481  ...                        7.0                       -170.0                         2.8                         0                     1.8
+27076                  0.504733               0.482762                  0.496431               0.460613                      0.517249  ...                       -1.0                        -40.0                         9.6                        -1                     1.5
+
+[5 rows x 69 columns]
+2025-05-11 15:09:29,364 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:09:29,364 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:09:29,364 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:09:29,367 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:09:29,367 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5961
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - f1: 0.6774
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - precision: 0.6269
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - recall: 0.7368
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.6154
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6780
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2426
+2025-05-11 15:09:30,522 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5961)
+2025-05-11 15:09:30,522 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:09:33,716 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:09:33,716 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:09:33,716 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:09:33,716 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.6054
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - f1: 0.6486
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - precision: 0.6667
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - recall: 0.6316
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.6250
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6898
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2466
+2025-05-11 15:09:37,762 - src.experiments.src.core.model_trainer - INFO - 
+New best model: CatBoost (AUC-ROC: 0.6054)
+2025-05-11 15:09:37,762 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:09:37,871 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:09:37,873 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_1/model_comparison.csv
+2025-05-11 15:09:37,874 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_1/model_comparison.json
+2025-05-11 15:09:37,874 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:09:37,876 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.596118  0.677419   0.626866  0.736842  0.615385  0.677977     0.242592
+CatBoost            0.605450  0.648649   0.666667  0.631579  0.625000  0.689830     0.246629
+2025-05-11 15:09:38,171 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.444
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.714
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Precision: 0.602
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Recall: 0.877
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.615
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.243
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.495
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.688
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Precision: 0.632
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Recall: 0.754
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.625
+2025-05-11 15:09:38,172 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.243
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.253
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.723
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Precision: 0.571
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Recall: 0.982
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.587
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.374
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.701
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Precision: 0.600
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Recall: 0.842
+2025-05-11 15:09:38,471 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.606
+2025-05-11 15:09:38,472 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-11 15:09:38,472 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_1/checkpoints/window_1_logisticregression.joblib
+2025-05-11 15:09:38,473 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_1/checkpoints/window_1_catboost.cbm
+2025-05-11 15:09:38,474 - src.experiments.src.core.model_trainer - INFO - Saved best model (CatBoost) to production at /Users/ankamenskiy/SmartDota/models/catboost/window_1.cbm
+2025-05-11 15:09:38,474 - root - INFO - 
+Processing window 2/6
+2025-05-11 15:09:38,475 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (26972, 19)
+2025-05-11 15:09:38,475 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:09:38,493 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:09:38,497 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:38,502 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:38,502 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:09:38,503 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:09:39,432 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:09:39,438 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:09:39,438 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (26972, 19)
+2025-05-11 15:09:39,438 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:09:39,441 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:09:39,443 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:09:39,443 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:09:39,444 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:09:39,444 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:09:39,447 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:09:39,447 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:09:39,798 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:09:40,518 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:09:40,888 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:09:41,283 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:09:49,765 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:09:49,766 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:09:49,771 - src.experiments.src.core.factory - INFO - Result df shape: (26972, 69)
+2025-05-11 15:09:49,772 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:09:49,788 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.510814               0.515930                  0.499854               0.534668                      0.498115  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493824               0.504435                  0.506269               0.502275                      0.503584  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.482493               0.493272                  0.465202               0.497095                      0.496347  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511959               0.507386                  0.538174               0.491755                      0.523852  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.503390               0.496803                  0.507201               0.487806                      0.501190  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:09:49,802 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:09:49,805 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (100, 19)
+2025-05-11 15:09:49,805 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:09:49,805 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:09:49,806 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:09:49,806 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:09:49,806 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:09:49,806 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:09:49,806 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:09:49,806 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:09:49,809 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:09:49,813 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:09:49,815 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:09:49,817 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:09:49,854 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:09:49,854 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:09:49,855 - src.experiments.src.core.factory - INFO - Result df shape: (100, 69)
+2025-05-11 15:09:49,855 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:09:49,870 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+26972                  0.512443               0.507274                  0.510045               0.522609                      0.489776  ...                      -11.0                       -250.0                         4.0                         2                     0.4
+26973                  0.481667               0.503748                  0.465633               0.519392                      0.480153  ...                        5.0                        -88.0                        -1.3                         0                    -0.5
+26974                  0.522951               0.489226                  0.566377               0.518987                      0.542426  ...                       -7.0                        -86.0                         4.1                         0                     0.6
+26975                  0.512598               0.485208                  0.531446               0.478395                      0.512491  ...                        8.0                       -174.0                        -1.4                        -1                     0.2
+26976                  0.502358               0.512384                  0.526118               0.530812                      0.474501  ...                       -3.0                        126.0                         7.8                         0                     0.4
+
+[5 rows x 69 columns]
+2025-05-11 15:09:49,870 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:09:49,870 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:09:49,870 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:09:49,871 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:09:49,871 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:09:51,104 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.4554
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - f1: 0.5391
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - precision: 0.5167
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - recall: 0.5636
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.4700
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.8046
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2956
+2025-05-11 15:09:51,105 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.4554)
+2025-05-11 15:09:51,105 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:09:54,021 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:09:54,021 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:09:54,021 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:09:54,021 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:09:55,422 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.4638
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - f1: 0.5505
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - precision: 0.5556
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - recall: 0.5455
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5100
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6959
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2514
+2025-05-11 15:09:55,423 - src.experiments.src.core.model_trainer - INFO - 
+New best model: CatBoost (AUC-ROC: 0.4638)
+2025-05-11 15:09:55,423 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:09:55,536 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:09:55,537 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_2/model_comparison.csv
+2025-05-11 15:09:55,537 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_2/model_comparison.json
+2025-05-11 15:09:55,537 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:09:55,540 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.455354  0.539130   0.516667  0.563636      0.47  0.804605     0.295559
+CatBoost            0.463838  0.550459   0.555556  0.545455      0.51  0.695924     0.251387
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.710
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Precision: 0.550
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.550
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.296
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.000
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.710
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Precision: 0.550
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.550
+2025-05-11 15:09:55,840 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.296
+2025-05-11 15:09:56,260 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.465
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.714
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Precision: 0.556
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.560
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.251
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.465
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.714
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Precision: 0.556
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.560
+2025-05-11 15:09:56,261 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.251
+2025-05-11 15:09:56,262 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_2/checkpoints/window_2_logisticregression.joblib
+2025-05-11 15:09:56,262 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_2/checkpoints/window_2_catboost.cbm
+2025-05-11 15:09:56,262 - src.experiments.src.core.model_trainer - INFO - Saved best model (CatBoost) to production at /Users/ankamenskiy/SmartDota/models/catboost/window_2.cbm
+2025-05-11 15:09:56,262 - root - INFO - 
+Processing window 3/6
+2025-05-11 15:09:56,264 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (26829, 19)
+2025-05-11 15:09:56,264 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:09:56,273 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:09:56,276 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:56,279 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:09:56,279 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:09:56,279 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:09:57,116 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:09:57,121 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:09:57,121 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (26829, 19)
+2025-05-11 15:09:57,121 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:09:57,125 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:09:57,127 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:09:57,127 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:09:57,127 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:09:57,127 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:09:57,130 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:09:57,131 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:09:57,491 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:09:58,226 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:09:58,579 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:09:59,012 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:07,429 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:07,430 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:07,436 - src.experiments.src.core.factory - INFO - Result df shape: (26829, 69)
+2025-05-11 15:10:07,436 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:07,452 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.510881               0.516101                  0.501433               0.535316                      0.498215  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493648               0.504795                  0.506832               0.500733                      0.503844  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.482381               0.492634                  0.466192               0.494305                      0.497494  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511411               0.506995                  0.536511               0.492335                      0.524139  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.503387               0.497403                  0.507958               0.488792                      0.501296  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:10:07,468 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:07,471 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (143, 19)
+2025-05-11 15:10:07,471 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:07,471 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:07,472 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:07,472 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:07,472 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:07,472 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:07,472 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:07,472 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:07,475 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:07,480 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:07,482 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:07,485 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:07,535 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:07,536 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:07,536 - src.experiments.src.core.factory - INFO - Result df shape: (143, 69)
+2025-05-11 15:10:07,536 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:07,551 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+26829                  0.483736               0.509900                  0.471820               0.534879                      0.469782  ...                        7.0                         10.0                         3.2                        -1                    -0.7
+26830                  0.494312               0.517211                  0.495955               0.516895                      0.471676  ...                        2.0                         40.0                         2.6                        -1                     0.5
+26831                  0.497327               0.495804                  0.503682               0.479918                      0.498541  ...                        2.0                       -389.0                        11.1                         1                     0.4
+26832                  0.497350               0.481983                  0.515555               0.460247                      0.516859  ...                      -11.0                        103.0                        -0.8                         0                     0.3
+26833                  0.499325               0.486599                  0.508712               0.504906                      0.519181  ...                        9.0                         93.0                        -8.9                        -1                    -0.2
+
+[5 rows x 69 columns]
+2025-05-11 15:10:07,552 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:07,553 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:10:07,553 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:10:07,554 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:10:07,554 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.6367
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - f1: 0.7006
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - precision: 0.6392
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - recall: 0.7750
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.6294
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6650
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2355
+2025-05-11 15:10:08,724 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.6367)
+2025-05-11 15:10:08,724 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:10:12,712 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:10:12,712 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:10:12,712 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:10:12,712 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5981
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - f1: 0.6375
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - precision: 0.6375
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - recall: 0.6375
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5944
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6877
+2025-05-11 15:10:14,248 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2473
+2025-05-11 15:10:14,248 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:10:14,345 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:10:14,346 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_3/model_comparison.csv
+2025-05-11 15:10:14,346 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_3/model_comparison.json
+2025-05-11 15:10:14,346 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:10:14,348 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision  recall  accuracy  log_loss  brier_score
+LogisticRegression  0.636706  0.700565   0.639175  0.7750  0.629371  0.665007     0.235470
+CatBoost            0.598115  0.637500   0.637500  0.6375  0.594406  0.687657     0.247257
+2025-05-11 15:10:14,647 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.384
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.731
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Precision: 0.594
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Recall: 0.950
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.608
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.235
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.515
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.714
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Precision: 0.682
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Recall: 0.750
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.664
+2025-05-11 15:10:14,648 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.235
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.475
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.732
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Precision: 0.586
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Recall: 0.975
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.601
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-11 15:10:14,950 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.475
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.732
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - Precision: 0.586
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - Recall: 0.975
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.601
+2025-05-11 15:10:14,951 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.247
+2025-05-11 15:10:14,951 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_3/checkpoints/window_3_logisticregression.joblib
+2025-05-11 15:10:14,952 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_3/checkpoints/window_3_catboost.cbm
+2025-05-11 15:10:14,952 - src.experiments.src.core.model_trainer - INFO - Saved best model (LogisticRegression) to production at /Users/ankamenskiy/SmartDota/models/sklearn/window_3.joblib
+2025-05-11 15:10:14,952 - root - INFO - 
+Processing window 4/6
+2025-05-11 15:10:14,953 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (26674, 19)
+2025-05-11 15:10:14,953 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:10:14,960 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:10:14,963 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:14,965 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:14,965 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:10:14,965 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:10:15,771 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:10:15,776 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:10:15,776 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (26674, 19)
+2025-05-11 15:10:15,776 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:15,780 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:15,782 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:15,782 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:15,782 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:15,782 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:15,786 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:15,786 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:16,225 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:16,872 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:17,320 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:17,690 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:26,291 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:26,291 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:26,298 - src.experiments.src.core.factory - INFO - Result df shape: (26674, 69)
+2025-05-11 15:10:26,298 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:26,313 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.511238               0.515475                  0.502851               0.534166                      0.500221  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493653               0.504302                  0.505524               0.500072                      0.503332  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.482873               0.492872                  0.467762               0.494674                      0.497806  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511293               0.507262                  0.534824               0.493943                      0.523959  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.503826               0.496292                  0.509494               0.486493                      0.502448  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:10:26,326 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:26,330 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (155, 19)
+2025-05-11 15:10:26,330 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:26,331 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:26,331 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:26,331 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:26,331 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:26,331 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:26,331 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:26,331 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:26,334 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:26,339 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:26,341 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:26,343 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:26,395 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:26,395 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:26,396 - src.experiments.src.core.factory - INFO - Result df shape: (155, 69)
+2025-05-11 15:10:26,396 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:26,411 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+26674                  0.508803               0.501116                  0.514327               0.457382                      0.500476  ...                       20.0                       -257.0                         2.9                        -1                     0.3
+26675                  0.485394               0.494189                  0.454628               0.511579                      0.503316  ...                        8.0                        -66.0                        -2.8                         0                    -0.8
+26676                  0.503802               0.483566                  0.508619               0.457627                      0.525069  ...                       -1.0                        144.0                        -5.3                         2                     0.3
+26677                  0.500409               0.491259                  0.496304               0.505443                      0.515576  ...                       -2.0                        -64.0                         0.6                        -1                    -1.0
+26678                  0.499845               0.510966                  0.476142               0.538277                      0.491349  ...                        0.0                         12.0                         1.5                        -2                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:10:26,412 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:26,412 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:10:26,412 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:10:26,414 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:10:26,414 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5337
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - f1: 0.5763
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - precision: 0.5368
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - recall: 0.6220
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5161
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.7047
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2549
+2025-05-11 15:10:27,705 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5337)
+2025-05-11 15:10:27,705 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:10:32,278 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:10:32,278 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:10:32,278 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:10:32,278 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5526
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - f1: 0.5660
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - precision: 0.5844
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - recall: 0.5488
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5548
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6907
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2488
+2025-05-11 15:10:34,794 - src.experiments.src.core.model_trainer - INFO - 
+New best model: CatBoost (AUC-ROC: 0.5526)
+2025-05-11 15:10:34,794 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:10:34,946 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:10:34,948 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_4/model_comparison.csv
+2025-05-11 15:10:34,948 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_4/model_comparison.json
+2025-05-11 15:10:34,948 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:10:34,951 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.533745  0.576271   0.536842  0.621951  0.516129  0.704685     0.254933
+CatBoost            0.552623  0.566038   0.584416  0.548780  0.554839  0.690733     0.248793
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.303
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.695
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Precision: 0.536
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Recall: 0.988
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.542
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.255
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.515
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.596
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Precision: 0.573
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Recall: 0.622
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.555
+2025-05-11 15:10:35,314 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.255
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.475
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.698
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - Precision: 0.536
+2025-05-11 15:10:35,798 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.542
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.485
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.685
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Precision: 0.543
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Recall: 0.927
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.548
+2025-05-11 15:10:35,799 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-11 15:10:35,799 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_4/checkpoints/window_4_logisticregression.joblib
+2025-05-11 15:10:35,800 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_4/checkpoints/window_4_catboost.cbm
+2025-05-11 15:10:35,800 - src.experiments.src.core.model_trainer - INFO - Saved best model (CatBoost) to production at /Users/ankamenskiy/SmartDota/models/catboost/window_4.cbm
+2025-05-11 15:10:35,800 - root - INFO - 
+Processing window 5/6
+2025-05-11 15:10:35,802 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (26557, 19)
+2025-05-11 15:10:35,802 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:10:35,830 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:10:35,834 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:35,837 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:35,837 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:10:35,837 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:10:36,731 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:10:36,736 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:10:36,737 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (26557, 19)
+2025-05-11 15:10:36,737 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:36,740 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:36,742 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:36,742 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:36,742 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:36,742 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:36,745 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:36,746 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:37,120 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:37,889 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:38,247 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:38,745 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:47,507 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:47,508 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:47,514 - src.experiments.src.core.factory - INFO - Result df shape: (26557, 69)
+2025-05-11 15:10:47,515 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:47,530 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.510907               0.515014                  0.503741               0.534462                      0.500527  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493282               0.504683                  0.505661               0.500592                      0.502786  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.483007               0.492597                  0.466967               0.493010                      0.499085  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511544               0.507543                  0.535592               0.496963                      0.525906  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.503874               0.496108                  0.508886               0.486162                      0.503083  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:10:47,538 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (117, 19)
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:47,540 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:47,540 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:47,540 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:47,540 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:47,543 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:47,547 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:47,549 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:47,551 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:10:47,593 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:10:47,593 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:10:47,594 - src.experiments.src.core.factory - INFO - Result df shape: (117, 69)
+2025-05-11 15:10:47,594 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:10:47,610 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+26557                  0.475646               0.518224                  0.396885               0.542467                      0.451503  ...                       -3.0                         56.0                        -2.0                         0                     0.0
+26558                  0.484244               0.501089                  0.455890               0.510253                      0.497125  ...                        3.0                       -169.0                         5.2                         1                     1.3
+26559                  0.519659               0.485298                  0.565858               0.480448                      0.534954  ...                       10.0                       -164.0                         2.2                         1                    -0.2
+26560                  0.503656               0.492225                  0.512220               0.499108                      0.512668  ...                       13.0                       -109.0                         4.9                        -1                     0.6
+26561                  0.525450               0.498764                  0.531163               0.489535                      0.513388  ...                       -5.0                        255.0                         0.3                         1                    -0.4
+
+[5 rows x 69 columns]
+2025-05-11 15:10:47,610 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:10:47,611 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:10:47,611 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:10:47,613 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:10:47,613 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:10:49,070 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:10:49,070 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5281
+2025-05-11 15:10:49,070 - src.experiments.src.core.model_trainer - INFO - f1: 0.5620
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - precision: 0.5484
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - recall: 0.5763
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5470
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.7445
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2692
+2025-05-11 15:10:49,071 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5281)
+2025-05-11 15:10:49,071 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:10:52,572 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:10:52,572 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:10:52,572 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:10:52,572 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:10:54,493 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5953
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - f1: 0.6000
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - precision: 0.5902
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - recall: 0.6102
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5897
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6917
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2493
+2025-05-11 15:10:54,494 - src.experiments.src.core.model_trainer - INFO - 
+New best model: CatBoost (AUC-ROC: 0.5953)
+2025-05-11 15:10:54,494 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:10:54,655 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:10:54,657 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_5/model_comparison.csv
+2025-05-11 15:10:54,657 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_5/model_comparison.json
+2025-05-11 15:10:54,657 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:10:54,660 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.528054  0.561983   0.548387  0.576271  0.547009  0.744537     0.269194
+CatBoost            0.595266  0.600000   0.590164  0.610169  0.589744  0.691702     0.249278
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.152
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.678
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Precision: 0.513
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.521
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.269
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.485
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.605
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Precision: 0.557
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Recall: 0.661
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.564
+2025-05-11 15:10:54,975 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.269
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.670
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Precision: 0.504
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.504
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.495
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.662
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Precision: 0.537
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Recall: 0.864
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.556
+2025-05-11 15:10:55,292 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.249
+2025-05-11 15:10:55,293 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_5/checkpoints/window_5_logisticregression.joblib
+2025-05-11 15:10:55,293 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_5/checkpoints/window_5_catboost.cbm
+2025-05-11 15:10:55,294 - src.experiments.src.core.model_trainer - INFO - Saved best model (CatBoost) to production at /Users/ankamenskiy/SmartDota/models/catboost/window_5.cbm
+2025-05-11 15:10:55,294 - root - INFO - 
+Processing window 6/6
+2025-05-11 15:10:55,295 - src.experiments.src.core.factory - INFO - Fitting pipeline on DataFrame with shape: (26464, 19)
+2025-05-11 15:10:55,295 - src.experiments.src.core.factory - INFO - Fitting transformer: DatasetConverter
+2025-05-11 15:10:55,310 - src.experiments.src.core.factory - INFO - Fitting transformer: HeroStatsTransformer
+2025-05-11 15:10:55,314 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:55,317 - src.experiments.src.transformers.hero_stats_transformer - INFO - Loaded hero data from /Users/ankamenskiy/SmartDota/data/hero_stats.json
+2025-05-11 15:10:55,317 - src.experiments.src.transformers.hero_stats_transformer - INFO - Number of heroes: 126
+2025-05-11 15:10:55,317 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero statistics from match data...
+2025-05-11 15:10:56,273 - src.experiments.src.transformers.hero_stats_transformer - INFO - Finished calculating hero statistics
+2025-05-11 15:10:56,278 - src.experiments.src.core.factory - INFO - Pipeline fitting completed
+2025-05-11 15:10:56,278 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (26464, 19)
+2025-05-11 15:10:56,278 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:10:56,281 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:10:56,284 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:10:56,284 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:10:56,284 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:10:56,284 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:10:56,287 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:10:56,287 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:10:56,647 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:10:57,317 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:10:57,776 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:10:58,141 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:11:06,718 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:11:06,718 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:11:06,725 - src.experiments.src.core.factory - INFO - Result df shape: (26464, 69)
+2025-05-11 15:11:06,725 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:11:06,744 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+   radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+0                  0.510353               0.515125                  0.503810               0.533669                      0.499981  ...                        9.0                       -130.0                         4.6                        -2                     1.0
+1                  0.493336               0.504463                  0.505841               0.500985                      0.503143  ...                        4.0                         16.0                         4.7                        -1                    -0.1
+2                  0.483039               0.492248                  0.467993               0.491500                      0.498747  ...                       13.0                         -6.0                        -3.4                         0                    -1.1
+3                  0.511745               0.507688                  0.535714               0.496878                      0.525690  ...                       -9.0                        115.0                         5.8                         2                    -0.7
+4                  0.504265               0.496270                  0.509425               0.485365                      0.503325  ...                       12.0                       -102.0                         2.2                         1                     0.0
+
+[5 rows x 69 columns]
+2025-05-11 15:11:06,755 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:11:06,760 - src.experiments.src.core.factory - INFO - Transforming DataFrame with shape: (93, 19)
+2025-05-11 15:11:06,760 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-11 15:11:06,761 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_win, start_time, end_time, actualRank, rank, radiant_team, dire_team, radiant_1, radiant_2, radiant_3, radiant_4, radiant_5, dire_1, dire_2, dire_3, dire_4, dire_5, pd_start_time
+2025-05-11 15:11:06,761 - src.experiments.src.core.factory - INFO - Result df shape: (0, 0)
+2025-05-11 15:11:06,761 - src.experiments.src.core.factory - INFO - Added features by DatasetConverter: RangeIndex(start=0, stop=0, step=1)
+2025-05-11 15:11:06,761 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+Empty DataFrame
+Columns: []
+Index: []
+2025-05-11 15:11:06,761 - src.experiments.src.core.factory - INFO - Applying transformer: HeroStatsTransformer
+2025-05-11 15:11:06,761 - src.experiments.src.transformers.hero_stats_transformer - INFO - Starting feature transformation...
+2025-05-11 15:11:06,761 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero winrates within team...
+2025-05-11 15:11:06,764 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero with hero winrates within team...
+2025-05-11 15:11:06,771 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero versus hero winrates...
+2025-05-11 15:11:06,773 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating hero pickrates within team...
+2025-05-11 15:11:06,775 - src.experiments.src.transformers.hero_stats_transformer - INFO - Calculating extra hero statistics features...
+2025-05-11 15:11:06,811 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 62 extra hero statistics features
+2025-05-11 15:11:06,811 - src.experiments.src.transformers.hero_stats_transformer - INFO - Added 69 hero statistics features
+2025-05-11 15:11:06,811 - src.experiments.src.core.factory - INFO - Result df shape: (93, 69)
+2025-05-11 15:11:06,812 - src.experiments.src.core.factory - INFO - Added features by HeroStatsTransformer: Index(['radiant_avg_hero_winrate', 'dire_avg_hero_winrate',
+       'radiant_avg_hero_synergy', 'dire_avg_hero_synergy',
+       'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate',
+       'dire_avg_hero_pickrate', 'radiant_role_carry_count',
+       'radiant_role_support_count', 'radiant_role_nuker_count',
+       'radiant_role_disabler_count', 'radiant_role_jungler_count',
+       'radiant_role_durable_count', 'radiant_role_escape_count',
+       'radiant_role_pusher_count', 'radiant_role_initiator_count',
+       'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count',
+       'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int',
+       'radiant_attack_melee_count', 'radiant_attack_ranged_count',
+       'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed',
+       'radiant_avg_attack_range', 'radiant_avg_base_damage',
+       'radiant_role_diversity', 'radiant_team_synergy',
+       'dire_role_carry_count', 'dire_role_support_count',
+       'dire_role_nuker_count', 'dire_role_disabler_count',
+       'dire_role_jungler_count', 'dire_role_durable_count',
+       'dire_role_escape_count', 'dire_role_pusher_count',
+       'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str',
+       'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count',
+       'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count',
+       'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed',
+       'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity',
+       'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage',
+       'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage',
+       'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage',
+       'team_armor_advantage', 'team_move_speed_advantage',
+       'team_attack_range_advantage', 'team_base_damage_advantage',
+       'role_diversity_advantage', 'team_synergy_advantage'],
+      dtype='object')
+2025-05-11 15:11:06,826 - src.experiments.src.core.factory - INFO - First few rows of transformed data:
+       radiant_avg_hero_winrate  dire_avg_hero_winrate  radiant_avg_hero_synergy  dire_avg_hero_synergy  radiant_avg_vs_enemy_winrate  ...  team_move_speed_advantage  team_attack_range_advantage  team_base_damage_advantage  role_diversity_advantage  team_synergy_advantage
+26464                  0.501626               0.493875                  0.467542               0.487547                      0.494257  ...                        6.0                       -130.0                         1.3                         0                     1.2
+26465                  0.512624               0.509176                  0.530732               0.512544                      0.497980  ...                        4.0                        -40.0                         1.6                        -2                    -0.8
+26466                  0.499049               0.501402                  0.512925               0.467494                      0.499735  ...                       -9.0                         56.0                        -2.0                         0                    -0.5
+26467                  0.516470               0.510908                  0.538978               0.516817                      0.525664  ...                       19.0                         81.0                        -8.2                         1                    -1.1
+26469                  0.499516               0.500730                  0.508394               0.490999                      0.506704  ...                      -19.0                       -118.0                         0.6                         0                    -0.2
+
+[5 rows x 69 columns]
+2025-05-11 15:11:06,827 - src.experiments.src.core.factory - INFO - Final DataFrame columns: ['radiant_avg_hero_winrate', 'dire_avg_hero_winrate', 'radiant_avg_hero_synergy', 'dire_avg_hero_synergy', 'radiant_avg_vs_enemy_winrate', 'radiant_avg_hero_pickrate', 'dire_avg_hero_pickrate', 'radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'radiant_attr_str_count', 'radiant_avg_str', 'radiant_attr_agi_count', 'radiant_avg_agi', 'radiant_attr_int_count', 'radiant_avg_int', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'radiant_avg_health', 'radiant_avg_armor', 'radiant_avg_move_speed', 'radiant_avg_attack_range', 'radiant_avg_base_damage', 'radiant_role_diversity', 'radiant_team_synergy', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'dire_attr_str_count', 'dire_avg_str', 'dire_attr_agi_count', 'dire_avg_agi', 'dire_attr_int_count', 'dire_avg_int', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'dire_avg_health', 'dire_avg_armor', 'dire_avg_move_speed', 'dire_avg_attack_range', 'dire_avg_base_damage', 'dire_role_diversity', 'dire_team_synergy', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'attr_str_advantage', 'attr_agi_advantage', 'attr_int_advantage', 'team_health_advantage', 'team_armor_advantage', 'team_move_speed_advantage', 'team_attack_range_advantage', 'team_base_damage_advantage', 'role_diversity_advantage', 'team_synergy_advantage']
+2025-05-11 15:11:06,827 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-11 15:11:06,827 - src.experiments.src.core.model_trainer - INFO - Using SHAP: True
+2025-05-11 15:11:06,830 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-11 15:11:06,830 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-11 15:11:08,023 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-11 15:11:08,023 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5488
+2025-05-11 15:11:08,023 - src.experiments.src.core.model_trainer - INFO - f1: 0.6333
+2025-05-11 15:11:08,023 - src.experiments.src.core.model_trainer - INFO - precision: 0.6129
+2025-05-11 15:11:08,023 - src.experiments.src.core.model_trainer - INFO - recall: 0.6552
+2025-05-11 15:11:08,024 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5269
+2025-05-11 15:11:08,024 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6841
+2025-05-11 15:11:08,024 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2459
+2025-05-11 15:11:08,024 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5488)
+2025-05-11 15:11:08,024 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for LogisticRegression
+2025-05-11 15:11:10,878 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for LogisticRegression
+2025-05-11 15:11:10,878 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-11 15:11:10,878 - root - INFO - CatBoost categorical features names: ['radiant_role_carry_count', 'radiant_role_support_count', 'radiant_role_nuker_count', 'radiant_role_disabler_count', 'radiant_role_jungler_count', 'radiant_role_durable_count', 'radiant_role_escape_count', 'radiant_role_pusher_count', 'radiant_role_initiator_count', 'dire_role_carry_count', 'dire_role_support_count', 'dire_role_nuker_count', 'dire_role_disabler_count', 'dire_role_jungler_count', 'dire_role_durable_count', 'dire_role_escape_count', 'dire_role_pusher_count', 'dire_role_initiator_count', 'radiant_attr_str_count', 'radiant_attr_agi_count', 'radiant_attr_int_count', 'dire_attr_str_count', 'dire_attr_agi_count', 'dire_attr_int_count', 'radiant_attack_melee_count', 'radiant_attack_ranged_count', 'dire_attack_melee_count', 'dire_attack_ranged_count', 'role_carry_advantage', 'role_support_advantage', 'role_nuker_advantage', 'role_disabler_advantage', 'radiant_role_diversity', 'dire_role_diversity']
+2025-05-11 15:11:10,878 - src.experiments.src.core.model_trainer - INFO - CatBoost categorical features indices: [7, 8, 9, 10, 11, 12, 13, 14, 15, 31, 32, 33, 34, 35, 36, 37, 38, 39, 16, 18, 20, 40, 42, 44, 22, 23, 46, 47, 55, 56, 57, 58, 29, 53]
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.4677
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - f1: 0.5766
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - precision: 0.6038
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - recall: 0.5517
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.4946
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6963
+2025-05-11 15:11:12,895 - src.experiments.src.core.model_trainer - INFO - brier_score: 0.2516
+2025-05-11 15:11:12,895 - src.experiments.src.utils.feature_importance - INFO - 
+Analyzing feature importance for CatBoost
+2025-05-11 15:11:12,993 - src.experiments.src.utils.feature_importance - INFO - Saved feature importance statistics for CatBoost
+2025-05-11 15:11:12,993 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_6/model_comparison.csv
+2025-05-11 15:11:12,994 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_6/model_comparison.json
+2025-05-11 15:11:12,994 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-11 15:11:12,996 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss  brier_score
+LogisticRegression  0.548768  0.633333   0.612903  0.655172  0.526882  0.684109     0.245864
+CatBoost            0.467734  0.576577   0.603774  0.551724  0.494624  0.696349     0.251595
+2025-05-11 15:11:13,333 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-11 15:11:13,333 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.333
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.786
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Precision: 0.655
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Recall: 0.983
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.667
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.246
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.333
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.786
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Precision: 0.655
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Recall: 0.983
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.667
+2025-05-11 15:11:13,334 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.246
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Metrics at optimal F1 threshold:
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.768
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Precision: 0.624
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.624
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.252
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - 
+Optimal Accuracy threshold: 0.000
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Metrics at optimal Accuracy threshold:
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.768
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Precision: 0.624
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.624
+2025-05-11 15:11:13,669 - src.experiments.src.utils.metrics - INFO - Brier Score: 0.252
+2025-05-11 15:11:13,670 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_6/checkpoints/window_6_logisticregression.joblib
+2025-05-11 15:11:13,671 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c_hero-stats/2025.05.11-15.09.04/window_6/checkpoints/window_6_catboost.cbm
+2025-05-11 15:11:13,671 - src.experiments.src.core.model_trainer - INFO - Saved best model (LogisticRegression) to production at /Users/ankamenskiy/SmartDota/models/sklearn/window_6.joblib
+2025-05-11 15:11:13,671 - root - INFO - 
+Aggregated metrics across all windows:
+2025-05-11 15:11:13,671 - root - INFO - 
+LogisticRegression:
+2025-05-11 15:11:13,671 - root - INFO - auc_roc: 0.5498
+2025-05-11 15:11:13,671 - root - INFO - f1: 0.6148
+2025-05-11 15:11:13,671 - root - INFO - precision: 0.5801
+2025-05-11 15:11:13,671 - root - INFO - recall: 0.6548
+2025-05-11 15:11:13,671 - root - INFO - accuracy: 0.5508
+2025-05-11 15:11:13,671 - root - INFO - log_loss: 0.7135
+2025-05-11 15:11:13,671 - root - INFO - brier_score: 0.2573
+2025-05-11 15:11:13,671 - root - INFO - 
+CatBoost:
+2025-05-11 15:11:13,671 - root - INFO - auc_roc: 0.5472
+2025-05-11 15:11:13,671 - root - INFO - f1: 0.5965
+2025-05-11 15:11:13,672 - root - INFO - precision: 0.6063
+2025-05-11 15:11:13,672 - root - INFO - recall: 0.5875
+2025-05-11 15:11:13,672 - root - INFO - accuracy: 0.5614
+2025-05-11 15:11:13,672 - root - INFO - log_loss: 0.6920
+2025-05-11 15:11:13,672 - root - INFO - brier_score: 0.2492
+2025-05-11 15:11:13,672 - root - INFO - Time-based CV experiment completed successfully

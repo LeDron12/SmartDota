@@ -1,0 +1,77 @@
+{
+  "dataset": {
+    "type": "starz_public_matches",
+    "path": "/Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json"
+  },
+  "transformers": [
+    {
+      "name": "StarzDatasetConverter",
+      "enabled": true,
+      "description": "Converts raw match data to DataFrame format"
+    },
+    {
+      "name": "HeroFeaturesTransformer",
+      "enabled": false,
+      "heroes_path": "data/heroes.json",
+      "description": "Transforms hero picks into one-hot encoded features"
+    },
+    {
+      "name": "HeroStatsTransformer",
+      "enabled": true,
+      "heroes_path": "data/hero_stats.json",
+      "use_extra_features": false,
+      "description": "Calculates hero statistics features like winrates, pickrates, and banrates"
+    },
+    {
+      "name": "PlayerStatsTransformer",
+      "enabled": true,
+      "use_diff": false,
+      "use_extra_features": false,
+      "description": "Calculates player statistics features The transformer will generate 28 features (14 stats \u00d7 2 teams): Team average kills Team average deaths Team average assists Team average last hits Team average denies Team average hero damage Team average hero healing Team average role match Team average behavior Team average account level Team average dota plus subscribers Team average smurf flags Team average time since last match Team average matches played "
+    },
+    {
+      "name": "PlayerHeroStatsTransformer",
+      "enabled": true,
+      "use_diff": false,
+      "description": "Calculates player-hero statistics features"
+    },
+    {
+      "name": "PlayerRatingsTransformer",
+      "enabled": true,
+      "use_elo": true,
+      "use_glicko": true,
+      "rating_params": {
+        "elo_k": 32,
+        "glicko_rd": 350,
+        "glicko_vol": 0.06,
+        "glicko_tau": 0.5,
+        "rating_decay": 0.95
+      },
+      "add_diff": false,
+      "description": "Calculates player ratings features: estimated ELO and Glicko ratings"
+    }
+  ],
+  "model": {
+    "do_shap": true,
+    "use_param_grid": false,
+    "use_scaling": false,
+    "base_params": {
+      "LogisticRegression": {
+        "max_iter": 1000,
+        "random_state": 42
+      },
+      "RandomForest": {
+        "n_estimators": 100,
+        "random_state": 42
+      },
+      "CatBoost": {
+        "iterations": 1000,
+        "learning_rate": 0.01,
+        "depth": 5,
+        "loss_function": "Logloss",
+        "eval_metric": "Accuracy",
+        "random_seed": 42
+      }
+    }
+  }
+}

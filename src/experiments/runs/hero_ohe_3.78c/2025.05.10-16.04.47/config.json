@@ -1,0 +1,41 @@
+{
+  "dataset": {
+    "type": "public_matches",
+    "path": "src/data_new/fetched_datasets/public_matches__05-04-2025_05-05-2025_7-38\u0441_rank60+_27.5k.json"
+  },
+  "transformers": [
+    {
+      "name": "DatasetConverter",
+      "enabled": true,
+      "description": "Converts raw match data to DataFrame format"
+    },
+    {
+      "name": "HeroFeaturesTransformer",
+      "enabled": true,
+      "heroes_path": "data/heroes.json",
+      "description": "Transforms hero picks into one-hot encoded features"
+    }
+  ],
+  "model": {
+    "use_param_grid": false,
+    "base_params": {
+      "LogisticRegression": {
+        "max_iter": 1000,
+        "random_state": 42
+      },
+      "RandomForest": {
+        "n_estimators": 400,
+        "random_state": 42
+      },
+      "CatBoost": {
+        "iterations": 1000,
+        "learning_rate": 0.02,
+        "depth": 5,
+        "loss_function": "Logloss",
+        "eval_metric": "Accuracy",
+        "random_seed": 42,
+        "verbose": 200
+      }
+    }
+  }
+}

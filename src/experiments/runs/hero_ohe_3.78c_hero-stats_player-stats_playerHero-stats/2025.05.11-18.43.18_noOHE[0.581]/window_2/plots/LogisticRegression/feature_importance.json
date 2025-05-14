@@ -1,0 +1,280 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_assists",
+      "importance": 0.10750952931288679
+    },
+    {
+      "feature": "radiant_avg_account_level",
+      "importance": 0.10736297948461437
+    },
+    {
+      "feature": "dire_avg_last_hits",
+      "importance": 0.10055592823961228
+    },
+    {
+      "feature": "dire_avg_assists",
+      "importance": 0.09689480878587325
+    },
+    {
+      "feature": "radiant_avg_last_hits",
+      "importance": 0.09364979586696874
+    },
+    {
+      "feature": "radiant_avg_hero_damage",
+      "importance": 0.08362319823757426
+    },
+    {
+      "feature": "actualRank",
+      "importance": 0.07734348546139479
+    },
+    {
+      "feature": "dire_avg_hero_damage",
+      "importance": 0.04396926308217273
+    },
+    {
+      "feature": "dire_avg_hero_healing",
+      "importance": 0.03799978153156776
+    },
+    {
+      "feature": "radiant_avg_deaths",
+      "importance": 0.02413901301687034
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_smurf_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_dota_plus",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_behavior",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_role_match",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_vs_hero_matches",
+      "importance": 0.0
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_assists",
+      "importance": 0.10750952931288679
+    },
+    {
+      "feature": "radiant_avg_account_level",
+      "importance": 0.10736297948461437
+    },
+    {
+      "feature": "dire_avg_last_hits",
+      "importance": 0.10055592823961228
+    },
+    {
+      "feature": "dire_avg_assists",
+      "importance": 0.09689480878587325
+    },
+    {
+      "feature": "radiant_avg_last_hits",
+      "importance": 0.09364979586696874
+    },
+    {
+      "feature": "radiant_avg_hero_damage",
+      "importance": 0.08362319823757426
+    },
+    {
+      "feature": "actualRank",
+      "importance": 0.07734348546139479
+    },
+    {
+      "feature": "dire_avg_hero_damage",
+      "importance": 0.04396926308217273
+    },
+    {
+      "feature": "dire_avg_hero_healing",
+      "importance": 0.03799978153156776
+    },
+    {
+      "feature": "radiant_avg_deaths",
+      "importance": 0.02413901301687034
+    },
+    {
+      "feature": "radiant_avg_kills",
+      "importance": 0.02013114060265878
+    },
+    {
+      "feature": "dire_avg_deaths",
+      "importance": 0.016810116844868918
+    },
+    {
+      "feature": "radiant_avg_hero_healing",
+      "importance": 0.014343927470150506
+    },
+    {
+      "feature": "dire_avg_kills",
+      "importance": 0.014149793647572828
+    },
+    {
+      "feature": "radiant_avg_denies",
+      "importance": 0.0038799896184645317
+    },
+    {
+      "feature": "dire_avg_account_level",
+      "importance": 0.0037464757812898726
+    },
+    {
+      "feature": "dire_avg_denies",
+      "importance": 0.001344872822516186
+    },
+    {
+      "feature": "dire_avg_time_since_last",
+      "importance": 0.0007482119642450301
+    },
+    {
+      "feature": "radiant_avg_matches_played",
+      "importance": 0.0006907611773092551
+    },
+    {
+      "feature": "radiant_avg_player_matches",
+      "importance": 0.00027298755630059097
+    },
+    {
+      "feature": "dire_avg_player_matches",
+      "importance": 0.00025050841046068875
+    },
+    {
+      "feature": "radiant_avg_time_since_last",
+      "importance": 8.046331756824288e-05
+    },
+    {
+      "feature": "radiant_avg_player_vs_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_player_hero_matches",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_smurf_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_player_vs_hero_matches",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_player_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_hero_matches",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_player_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_matches_played",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_vs_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_dota_plus",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_behavior",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_role_match",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_pickrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_smurf_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_dota_plus",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_behavior",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_role_match",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.0
+    },
+    {
+      "feature": "dire_avg_player_vs_hero_matches",
+      "importance": 0.0
+    }
+  ]
+}

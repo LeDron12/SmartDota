@@ -1,0 +1,32 @@
+{
+    "auc_roc": {
+        "LogisticRegression": 0.5463387014,
+        "RandomForest": 0.5388495084,
+        "CatBoost": 0.5224948007
+    },
+    "f1": {
+        "LogisticRegression": 0.623501199,
+        "RandomForest": 0.6202759448,
+        "CatBoost": 0.705940108
+    },
+    "precision": {
+        "LogisticRegression": 0.5720572057,
+        "RandomForest": 0.5693832599,
+        "CatBoost": 0.5625978091
+    },
+    "recall": {
+        "LogisticRegression": 0.6851119895,
+        "RandomForest": 0.6811594203,
+        "CatBoost": 0.9472990777
+    },
+    "accuracy": {
+        "LogisticRegression": 0.5395894428,
+        "RandomForest": 0.5359237537,
+        "CatBoost": 0.5608504399
+    },
+    "log_loss": {
+        "LogisticRegression": 0.6869353314,
+        "RandomForest": 0.6894106886,
+        "CatBoost": 0.6868370772
+    }
+}

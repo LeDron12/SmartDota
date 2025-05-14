@@ -1,0 +1,22 @@
+{
+  "transformers": [
+    {
+      "name": "StarzDatasetConverter",
+      "module": "src.experiments.src.transformers.starz_dataset_converter",
+      "class": "StarzDatasetConverter",
+      "path": "StarzDatasetConverter.pkl"
+    },
+    {
+      "name": "HeroStatsTransformer",
+      "module": "src.experiments.src.transformers.hero_stats_transformer",
+      "class": "HeroStatsTransformer",
+      "path": "HeroStatsTransformer.pkl"
+    },
+    {
+      "name": "PlayerStatsTransformer",
+      "module": "src.experiments.src.transformers.player_stats_transformer",
+      "class": "PlayerStatsTransformer",
+      "path": "PlayerStatsTransformer.pkl"
+    }
+  ]
+}

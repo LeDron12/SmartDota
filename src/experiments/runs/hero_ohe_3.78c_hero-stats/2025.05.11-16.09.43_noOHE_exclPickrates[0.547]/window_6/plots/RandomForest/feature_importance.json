@@ -1,0 +1,68 @@
+{
+  "top_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.2008790370755772
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.13552793675569436
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.1174496762631519
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11010102323968092
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.10512285620688336
+    }
+  ],
+  "bottom_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.2008790370755772
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.13552793675569436
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.1174496762631519
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11010102323968092
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.10512285620688336
+    }
+  ],
+  "all_features": [
+    {
+      "feature": "radiant_avg_vs_enemy_winrate",
+      "importance": 0.2008790370755772
+    },
+    {
+      "feature": "dire_avg_hero_winrate",
+      "importance": 0.13552793675569436
+    },
+    {
+      "feature": "radiant_avg_hero_winrate",
+      "importance": 0.1174496762631519
+    },
+    {
+      "feature": "radiant_avg_hero_synergy",
+      "importance": 0.11010102323968092
+    },
+    {
+      "feature": "dire_avg_hero_synergy",
+      "importance": 0.10512285620688336
+    }
+  ]
+}

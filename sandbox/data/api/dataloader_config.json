@@ -1,0 +1,107 @@
+{
+    "B-match": {
+        
+        "N-utility": {
+            "B-i-players": {
+                "L-player_slot": true,
+                "L-account_id": true,
+                "L-hero_id": true,
+                "L-radiant_win": true,
+                "L-start_time": true,
+                "L-duration": true,
+                "L-patch": true,
+                "L-isRadiant": true,
+                "L-win": true,
+                "L-lose": true,
+                "L-lane": true,
+                "L-lane_role": true
+            }
+        },
+
+        "N-statistics": {
+
+            "B-i-players": {
+                "L-assists": true,
+                "L-camps_stacked": true,
+                "L-deaths": true,
+                "L-denies": true,
+                "L-firstblood_claimed": true,
+                "L-gold_per_min": true,
+                "L-hero_damage": true,
+                "L-hero_healing": true,
+                "L-kills": true,
+                "L-last_hits": true,
+                "L-net_worth": true,
+                "L-obs_placed": true,
+                "L-pings": true,
+                "L-roshans_killed": true,
+                "L-rune_pickups": true,
+                "L-sen_placed": true,
+                "L-teamfight_participation": true,
+                "L-xp_per_min": true,
+                "L-total_gold": true,
+                "L-total_xp": true,
+                "L-kills_per_min": true,
+                "L-kda": true,
+                "L-neutral_kills": true,
+                "L-lane_kills": true,
+                "L-ancient_kills": true,
+                "L-hero_kills": true,
+                "L-buyback_count": true,
+                "L-lane_efficiency": true,
+                "L-actions_per_min": true,
+                "B-benchmarks": {
+                    "B-gold_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-xp_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-kills_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-last_hits_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-hero_damage_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-hero_healing_per_min": {
+                        "L-raw": true,
+                        "L-pct": true
+                    },
+                    "B-tower_damage": {
+                        "L-raw": true,
+                        "L-pct": true
+                    }
+                }
+            }
+
+        },
+
+        "N-in_game": {
+
+            "B-i-players": {
+                "L-i-dn_t": true,
+                "L-i-gold_t": true,
+                "L-i-lh_t": true,
+                "B-i-purchase_log": {
+                    "L-time": true,
+                    "L-key": true
+                },
+                "B-i-runes_log": {
+                    "L-time": true,
+                    "L-key": true
+                },
+                "L-i-xp_t": true
+            }
+
+        }
+
+    }
+}

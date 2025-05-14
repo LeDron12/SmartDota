@@ -1,0 +1,146 @@
+2025-05-06 14:52:45,901 - root - INFO - Starting experiment with config: configs/hero_ohe_3.78c.yaml
+2025-05-06 14:52:45,901 - root - INFO - Run directory: /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45
+2025-05-06 14:52:45,903 - src.experiments.src.utils.config - INFO - Loaded configuration from configs/hero_ohe_3.78c.yaml
+2025-05-06 14:52:45,903 - src.experiments.src.utils.config - INFO - Transformer 'DatasetConverter' is enabled
+2025-05-06 14:52:45,903 - src.experiments.src.utils.config - INFO - Transformer 'HeroFeaturesTransformer' is enabled
+2025-05-06 14:52:45,905 - src.experiments.src.core.dataset_factory - INFO - Loading dataset of type: public_matches
+2025-05-06 14:52:45,905 - src.experiments.src.core.dataset_factory - INFO - Loading public matches from: /Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/public_matches__05-04-2025_05-05-2025_7-38с_rank60+_27.5k.json
+2025-05-06 14:52:45,993 - src.experiments.src.core.dataset_factory - INFO - Removed 0 matches due to missing or empty team data.
+2025-05-06 14:52:46,067 - src.experiments.src.core.dataset_factory - INFO - Loaded 27279 matches
+2025-05-06 14:52:46,069 - src.experiments.src.core.factory - INFO - Registered transformer: DatasetConverter
+2025-05-06 14:52:46,069 - src.experiments.src.core.factory - INFO - Registered transformer: HeroFeaturesTransformer
+2025-05-06 14:52:46,069 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: DatasetConverter
+2025-05-06 14:52:46,069 - src.experiments.src.transformers.hero_features - INFO - Loading hero mapping...
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Loading heroes from: /Users/ankamenskiy/SmartDota/data/heroes.json
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Loaded 126 heroes
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 1 -> Anti-Mage (seq_id: 0)
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 2 -> Axe (seq_id: 1)
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 3 -> Bane (seq_id: 2)
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 4 -> Bloodseeker (seq_id: 3)
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Sample hero: 5 -> Crystal Maiden (seq_id: 4)
+2025-05-06 14:52:46,070 - src.experiments.src.transformers.hero_features - INFO - Initialized 252 feature names
+2025-05-06 14:52:46,070 - src.experiments.src.core.factory - INFO - Added transformer to pipeline: HeroFeaturesTransformer
+2025-05-06 14:52:46,070 - root - INFO - Processing data through transformer pipeline
+2025-05-06 14:52:46,071 - src.experiments.src.core.factory - INFO - Applying transformer: DatasetConverter
+2025-05-06 14:52:46,071 - src.experiments.src.transformers.dataset_converter - INFO - Converting 27279 matches to DataFrame format
+2025-05-06 14:52:46,071 - src.experiments.src.transformers.dataset_converter - INFO - Columns: match_id, radiant_team, dire_team, radiant_win
+2025-05-06 14:52:46,071 - src.experiments.src.core.factory - INFO - Applying transformer: HeroFeaturesTransformer
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO - Found 126 unique heroes
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO - Hero pick distribution:
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO - Most picked heroes:
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   14 (Pudge): 7936 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   86 (Rubick): 5771 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   42 (Wraith King): 5342 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   26 (Lion): 5077 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   74 (Invoker): 4995 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   68 (Ancient Apparition): 4965 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   35 (Sniper): 4923 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   7 (Earthshaker): 4813 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   21 (Windranger): 4789 picks
+2025-05-06 14:52:46,462 - src.experiments.src.transformers.hero_features - INFO -   39 (Queen of Pain): 4422 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO - Least picked heroes:
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   66 (Chen): 208 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   61 (Broodmother): 293 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   89 (Naga Siren): 297 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   82 (Meepo): 366 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   80 (Lone Druid): 371 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   92 (Visage): 381 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   77 (Lycan): 388 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   57 (Omniknight): 437 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   78 (Brewmaster): 439 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO -   113 (Arc Warden): 495 picks
+2025-05-06 14:52:46,463 - src.experiments.src.transformers.hero_features - INFO - Processing matches into hero ID features...
+2025-05-06 14:52:49,170 - src.experiments.src.transformers.hero_features - INFO - Processed 27279 matches
+2025-05-06 14:52:49,170 - src.experiments.src.transformers.hero_features - INFO - Skipped 0 matches due to invalid data
+2025-05-06 14:52:49,170 - src.experiments.src.transformers.hero_features - INFO - Features shape: (27279, 253)
+2025-05-06 14:52:49,170 - src.experiments.src.transformers.hero_features - INFO - Feature dtype: int8
+2025-05-06 14:52:49,174 - root - INFO - Splitting data into train and test sets...
+2025-05-06 14:52:49,174 - root - INFO - 
+Data split statistics:
+2025-05-06 14:52:49,174 - root - INFO - Training set: 25915 matches
+2025-05-06 14:52:49,174 - root - INFO - Test set: 1364 matches
+2025-05-06 14:52:49,174 - root - INFO - Training set win rate: 53.92%
+2025-05-06 14:52:49,174 - root - INFO - Test set win rate: 55.65%
+2025-05-06 14:52:49,174 - root - INFO - Saving transformed data...
+2025-05-06 14:52:49,305 - root - INFO - Saved transformed data to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/transformed_data.xlsx
+2025-05-06 14:52:49,305 - root - INFO - Training set shape: (25915, 253)
+2025-05-06 14:52:49,305 - root - INFO - Test set shape: (1364, 253)
+2025-05-06 14:52:49,305 - root - INFO - 
+Feature Statistics:
+2025-05-06 14:52:49,305 - root - INFO - Total features: 256
+2025-05-06 14:52:49,305 - root - INFO - Data shape: (27279, 253)
+2025-05-06 14:52:49,305 - root - INFO - 
+=== Model Training and Evaluation ===
+2025-05-06 14:52:49,305 - src.experiments.src.core.model_trainer - INFO - Using parameter grid search: False
+2025-05-06 14:52:49,307 - src.experiments.src.core.model_trainer - INFO - 
+Training and evaluating models...
+2025-05-06 14:52:49,307 - src.experiments.src.core.model_trainer - INFO - 
+Training LogisticRegression...
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - 
+LogisticRegression metrics:
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5463
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - f1: 0.6235
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - precision: 0.5721
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - recall: 0.6851
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5396
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6869
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - 
+New best model: LogisticRegression (AUC-ROC: 0.5463)
+2025-05-06 14:52:49,394 - src.experiments.src.core.model_trainer - INFO - 
+Training RandomForest...
+2025-05-06 14:53:06,452 - src.experiments.src.core.model_trainer - INFO - 
+RandomForest metrics:
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5388
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - f1: 0.6203
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - precision: 0.5694
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - recall: 0.6812
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5359
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6894
+2025-05-06 14:53:06,453 - src.experiments.src.core.model_trainer - INFO - 
+Training CatBoost...
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - 
+CatBoost metrics:
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - auc_roc: 0.5225
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - f1: 0.7059
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - precision: 0.5626
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - recall: 0.9473
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - accuracy: 0.5609
+2025-05-06 14:53:07,380 - src.experiments.src.core.model_trainer - INFO - log_loss: 0.6868
+2025-05-06 14:53:07,382 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/models/model_comparison.csv
+2025-05-06 14:53:07,383 - src.experiments.src.utils.metrics - INFO - Saved model comparison to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/models/model_comparison.json
+2025-05-06 14:53:07,383 - src.experiments.src.utils.metrics - INFO - 
+Model comparison:
+2025-05-06 14:53:07,386 - src.experiments.src.utils.metrics - INFO - 
+                     auc_roc        f1  precision    recall  accuracy  log_loss
+LogisticRegression  0.546339  0.623501   0.572057  0.685112  0.539589  0.686935
+RandomForest        0.538850  0.620276   0.569383  0.681159  0.535924  0.689411
+CatBoost            0.522495  0.705940   0.562598  0.947299  0.560850  0.686837
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - 
+LogisticRegression optimal threshold analysis:
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.293
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - Metrics at optimal threshold:
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.715
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - Precision: 0.557
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-06 14:53:07,943 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.557
+2025-05-06 14:53:08,604 - src.experiments.src.utils.metrics - INFO - 
+RandomForest optimal threshold analysis:
+2025-05-06 14:53:08,604 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-06 14:53:08,604 - src.experiments.src.utils.metrics - INFO - Metrics at optimal threshold:
+2025-05-06 14:53:08,604 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.715
+2025-05-06 14:53:08,604 - src.experiments.src.utils.metrics - INFO - Precision: 0.556
+2025-05-06 14:53:08,605 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-06 14:53:08,605 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.556
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - 
+CatBoost optimal threshold analysis:
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - Optimal F1 threshold: 0.000
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - Metrics at optimal threshold:
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - F1 Score: 0.715
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - Precision: 0.556
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - Recall: 1.000
+2025-05-06 14:53:08,935 - src.experiments.src.utils.metrics - INFO - Accuracy: 0.556
+2025-05-06 14:53:08,936 - src.experiments.src.core.model_trainer - INFO - Saved LogisticRegression model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/models/checkpoints/_logisticregression.joblib
+2025-05-06 14:53:09,152 - src.experiments.src.core.model_trainer - INFO - Saved RandomForest model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/models/checkpoints/_randomforest.joblib
+2025-05-06 14:53:09,163 - src.experiments.src.core.model_trainer - INFO - Saved CatBoost model to /Users/ankamenskiy/SmartDota/src/experiments/src/runs/hero_ohe_3.78c/2025.05.06-14.52.45/models/checkpoints/_catboost.cbm
+2025-05-06 14:53:09,167 - src.experiments.src.core.model_trainer - INFO - Saved best model (LogisticRegression) to production at /Users/ankamenskiy/SmartDota/models/sklearn/.joblib
+2025-05-06 14:53:09,167 - root - INFO - Experiment completed successfully
