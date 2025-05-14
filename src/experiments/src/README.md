@@ -12,6 +12,14 @@ This module provides tools for training, evaluating, and analyzing Dota 2 match 
 
 ## 🛠️ Usage
 
+### Data Preparation
+
+Before training models, you need to prepare the dataset:
+```bash
+tar -xzvf ../../data_for_draft_stage_train_EXTENDED.tgz -C ../../data_new/fetched_datasets/
+tar -xzvf ../../data_for_draft_stage_train.tgz -C ../../data_new/fetched_datasets/
+```
+
 ### Training Models
 
 ```bash

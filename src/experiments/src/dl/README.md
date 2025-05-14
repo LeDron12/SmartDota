@@ -16,6 +16,13 @@ Architecture:
 
 ## 🛠️ Usage
 
+### Data Preparation
+
+Before training models, you need to prepare the dataset:
+```bash
+tar -xzvf ../../data_for_live_dl_training.tgz -C ../../data_new/fetched_datasets/
+```
+
 ### Training
 
 ```bash
