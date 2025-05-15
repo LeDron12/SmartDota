@@ -1,6 +1,6 @@
 dataset:
   type: "starz_public_matches"  # Type of dataset to load
-  path: "../../data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
+  path: "src/data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
 # dataset:
 #   type: "public_matches"
 #   path: "/Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/public_matches__[start_time_start-1743800400]_[start_time_end-1746392400]_[matches_limit-ALL]_[rank_lower_bound-20]_[rank_upper_bound-40].json"

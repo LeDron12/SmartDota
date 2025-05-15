@@ -1,6 +1,6 @@
 dataset:
   type: "starz_public_matches"  # Type of dataset to load
-  path: "../../data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
+  path: "src/data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
 
 transformers:
   - name: StarzDatasetConverter
