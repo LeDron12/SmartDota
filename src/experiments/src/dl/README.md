@@ -16,17 +16,22 @@ Architecture:
 
 ## 🛠️ Usage
 
+**Run all scripts from CURRENT FOLDER**
+```bash
+cd src/experiments/src/dl/
+```
+
 ### Data Preparation
 
 Before training models, you need to prepare the dataset:
 ```bash
-tar -xzvf ../../data_for_live_dl_training.tgz -C ../../data_new/fetched_datasets/
+tar -xzvf ../../../data_new/fetched_datasets/data_for_live_dl_training.tgz -C ../../../data_new/fetched_datasets/
 ```
 
 ### Training
 
 ```bash
-python train.py --data_path=../data_new/fetched_datasets/match_data__[start_time_start-1743800400].json --output_dir=training/output/
+python train.py --data_path=../../../data_new/fetched_datasets/match_data__[start_time_start-1743800400].json --output_dir=training/output/
 ```
 
 ### Model Configuration

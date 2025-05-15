@@ -12,12 +12,18 @@ This module provides tools for training, evaluating, and analyzing Dota 2 match 
 
 ## 🛠️ Usage
 
+**Run all scripts from CURRENT FOLDER**
+```bash
+cd src/experiments/src/
+```
+
 ### Data Preparation
 
 Before training models, you need to prepare the dataset:
 ```bash
-tar -xzvf ../../data_for_draft_stage_train_EXTENDED.tgz -C ../../data_new/fetched_datasets/
-tar -xzvf ../../data_for_draft_stage_train.tgz -C ../../data_new/fetched_datasets/
+DATA_DIR="../../data_new/fetched_datasets"
+tar -xzvf $DATA_DIR/data_for_draft_stage_train_EXTENDED.tgz -C $DATA_DIR/
+tar -xzvf $DATA_DIR/data_for_draft_stage_train.tgz -C $DATA_DIR/
 ```
 
 ### Training Models
@@ -29,6 +35,9 @@ python __main__.py --config configs/train_config.yaml
 # Run time-based cross-validation
 python time_cv.py --config configs/cv_config.yaml --n-windows 5 --window-hours 24
 ```
+
+**Training results will be stored to folder:** \
+src/experiments/runs/<config_name>/<yyyy.mm.dd_hh.mm.ss>/
 
 ### Configuration
 
@@ -133,9 +142,12 @@ Training implements factory patters. You can add your Data Transformer to transf
    - Good baseline model
    - Fast training and inference
 
-### Training Process
+### Training Process and Results
 
 Just run a script with specified config
+
+**Training results will be stored to folder:** \
+src/experiments/runs/<config_name>/<yyyy.mm.dd_hh.mm.ss>/
 
 ## 📊 Evaluation
 

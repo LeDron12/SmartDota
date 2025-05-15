@@ -9,6 +9,11 @@ This module handles fetching and preprocessing Dota 2 match data from OpenDota a
 
 ## 🛠️ Usage
 
+**Run all scripts from CURRENT FOLDER**
+```bash
+cd src/data_new/
+```
+
 ### Fetching Match Data
 
 ```python
