@@ -31,7 +31,7 @@ tar -xzvf ../../../data_new/fetched_datasets/data_for_live_dl_training.tgz -C ..
 ### Training
 
 ```bash
-python train.py --data_path=../../../data_new/fetched_datasets/match_data__[start_time_start-1743800400].json --output_dir=training/output/
+python train.py --data_path=../../../data_new/fetched_datasets/match_data__\[start_time_start-1743800400\].json --output_dir=training/output/
 ```
 
 ### Model Configuration

@@ -30,10 +30,10 @@ tar -xzvf $DATA_DIR/data_for_draft_stage_train.tgz -C $DATA_DIR/
 
 ```bash
 # Train a model using configuration file
-python __main__.py --config configs/train_config.yaml
+python __main__.py --config=../configs/hero_ohe_3.78c_hero-stats_player-stats.yaml
 
 # Run time-based cross-validation
-python time_cv.py --config configs/cv_config.yaml --n-windows 5 --window-hours 24
+python time_cv.py --config=../configs/hero_ohe_3.78c_hero-stats_player-stats.yaml --n-windows=3 --window-hours=6
 ```
 
 **Training results will be stored to folder:** \

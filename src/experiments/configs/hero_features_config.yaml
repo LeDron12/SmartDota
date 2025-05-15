@@ -1,6 +1,6 @@
 dataset:
-  type: "public_matches"  # Type of dataset to load
-  path: "cache/public_110000_7-34b-ALL"  # Path relative to project root
+  type: "starzpublic_matches"  # Type of dataset to load
+  path: "../../data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
   params:
     min_match_id: 0
     max_match_id: 0

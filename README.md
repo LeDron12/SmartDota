@@ -136,7 +136,7 @@ python3 predict_pro.py \
 --match_id=<MATCH_ID>
 # Sample 
 python3 predict_pro.py \
---model_path=../experiments/src/dl/training/output/win_predictor_2025.05.13_22.35.13[xp_gold_objectives_teamfights]/final_model.pt \
+--model_path=../experiments/src/dl/training/output/win_predictor_2025.05.13_22.35.13\[xp_gold_objectives_teamfights\]/final_model.pt \
 --match_id=8290631276
 ```
 

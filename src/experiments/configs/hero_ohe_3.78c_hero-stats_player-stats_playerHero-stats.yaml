@@ -1,6 +1,6 @@
 dataset:
-  type: "starz_public_matches"  # Type of dataset to load
-  path: "/Users/ankamenskiy/SmartDota/src/data_new/fetched_datasets/stratz_matches.json"
+  type: "starzpublic_matches"  # Type of dataset to load
+  path: "../../data_new/fetched_datasets/stratz_matches.json"  # Path relative to project root
 
 transformers:
   - name: StarzDatasetConverter
