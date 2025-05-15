@@ -1,3 +1,28 @@
+# Summary
+
+Date : 2025-05-14 17:06:21
+
+Project: SmartDota
+
+Total : 534 files,  2103128 codes, 1759 comments, 2090 blanks, all 2106977 lines
+
+## Languages
+| language | files | code | comment | blank | total |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| JSON | 327 | 1,978,749 | 0 | 24 | 1,978,773 |
+| Log | 22 | 112,435 | 0 | 133 | 112,568 |
+| Python | 54 | 5,945 | 1,687 | 1,486 | 9,118 |
+| XML | 3 | 3,132 | 0 | 13 | 3,145 |
+| YAML | 28 | 1,298 | 49 | 86 | 1,433 |
+| Markdown | 9 | 723 | 0 | 242 | 965 |
+| Excel | 4 | 376 | 0 | 4 | 380 |
+| CSV | 79 | 310 | 0 | 79 | 389 |
+| MS SQL | 5 | 79 | 0 | 0 | 79 |
+| Shell Script | 1 | 56 | 17 | 18 | 91 |
+| pip requirements | 2 | 25 | 6 | 5 | 36 |
+
+---
+
 # SmartDota
 
 SmartDota is a machine learning project for Dota 2 match analysis and prediction. It provides tools for training models on historical match data and making real-time predictions during live matches.
@@ -189,28 +214,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [OpenDota API](https://docs.opendota.com/) for match data
 - [Stratz API](https://stratz.com/api) for additional match statistics
 - The Dota 2 community for inspiration and feedback
-
----
-
-# Summary
-
-Date : 2025-05-14 17:06:21
-
-Project: SmartDota
-
-Total : 534 files,  2103128 codes, 1759 comments, 2090 blanks, all 2106977 lines
-
-## Languages
-| language | files | code | comment | blank | total |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| JSON | 327 | 1,978,749 | 0 | 24 | 1,978,773 |
-| Log | 22 | 112,435 | 0 | 133 | 112,568 |
-| Python | 54 | 5,945 | 1,687 | 1,486 | 9,118 |
-| XML | 3 | 3,132 | 0 | 13 | 3,145 |
-| YAML | 28 | 1,298 | 49 | 86 | 1,433 |
-| Markdown | 9 | 723 | 0 | 242 | 965 |
-| Excel | 4 | 376 | 0 | 4 | 380 |
-| CSV | 79 | 310 | 0 | 79 | 389 |
-| MS SQL | 5 | 79 | 0 | 0 | 79 |
-| Shell Script | 1 | 56 | 17 | 18 | 91 |
-| pip requirements | 2 | 25 | 6 | 5 | 36 |
