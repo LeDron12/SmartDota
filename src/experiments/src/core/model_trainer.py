@@ -301,19 +301,19 @@ class ModelTrainer:
                 logger.info(f"Saved {name} model to {model_path}")
         
         # Save best model to production directory
-        models_dir = Path('/Users/ankamenskiy/SmartDota/models')
-        models_dir.mkdir(parents=True, exist_ok=True)
+        # models_dir = Path('/Users/ankamenskiy/SmartDota/models')
+        # # models_dir.mkdir(parents=True, exist_ok=True)
         
-        if self.best_model_name == 'CatBoost':
-            prod_model_path = models_dir / 'catboost' / f"{model_name}.cbm"
-            prod_model_path.parent.mkdir(parents=True, exist_ok=True)
-            self.best_model.save_model(str(prod_model_path), format="cbm")
-        else:
-            prod_model_path = models_dir / 'sklearn' / f"{model_name}.joblib"
-            prod_model_path.parent.mkdir(parents=True, exist_ok=True)
-            joblib.dump(self.best_model, prod_model_path)
+        # if self.best_model_name == 'CatBoost':
+        #     prod_model_path = models_dir / 'catboost' / f"{model_name}.cbm"
+        #     prod_model_path.parent.mkdir(parents=True, exist_ok=True)
+        #     self.best_model.save_model(str(prod_model_path), format="cbm")
+        # else:
+        #     prod_model_path = models_dir / 'sklearn' / f"{model_name}.joblib"
+        #     prod_model_path.parent.mkdir(parents=True, exist_ok=True)
+        #     joblib.dump(self.best_model, prod_model_path)
         
-        logger.info(f"Saved best model ({self.best_model_name}) to production at {prod_model_path}")
+        # logger.info(f"Saved best model ({self.best_model_name}) to production at {prod_model_path}")
     
     def predict_match(self, match_data: Dict[str, Any]) -> Dict[str, str]:
         """
